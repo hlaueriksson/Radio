@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RTHK</string>
+    <string name="activity_main">RTHK</string>
     <string name="radio1">第一台 Radio 1</string>
     <string name="radio2">第二台 Radio 2</string>
     <string name="radio3">第三台 Radio 3</string>

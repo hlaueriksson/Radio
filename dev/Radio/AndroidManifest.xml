@@ -13,7 +13,7 @@
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".EpisodeActivity"
-            android:label="Episode" />
+            android:name="com.hoffenkloffen.radio.EpisodeActivity"
+            android:label="@string/activity_episode" />
     </application>
 </manifest>

@@ -6,6 +6,28 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_btn_play"
+        android:contentDescription="@string/play"
+        android:onClick="play"/>
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_btn_pause"
+        android:contentDescription="@string/pause"
+        android:onClick="pause"/>
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_btn_stop"
+        android:contentDescription="@string/stop"
+        android:onClick="stop"/>
+
 </LinearLayout>

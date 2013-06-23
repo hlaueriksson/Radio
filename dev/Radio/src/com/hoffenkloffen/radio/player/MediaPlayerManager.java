@@ -14,11 +14,9 @@ public class MediaPlayerManager {
     public MediaPlayerManager(MediaPlayer player, String path) {
         this.player = player;
         this.path = path;
-
-        prepare();
     }
 
-    private void prepare() {
+    public void prepare() {
         try {
             player.setDataSource(path);
             player.prepare();
@@ -35,5 +33,11 @@ public class MediaPlayerManager {
         if (!player.isPlaying()) return;
 
         player.pause();
+    }
+
+    public void stop() {
+        if (!player.isPlaying()) return;
+
+        player.stop();
     }
 }

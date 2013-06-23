@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_launcher">
         <activity
             android:name="MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -40,6 +40,6 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.hoffenkloffen.radio.EpisodeActivity"
-            android:label="Episode" />
+            android:label="@string/activity_episode" />
     </application>
 </manifest>
