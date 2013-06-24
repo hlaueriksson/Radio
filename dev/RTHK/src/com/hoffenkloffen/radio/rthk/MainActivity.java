@@ -10,11 +10,13 @@ import android.widget.Button;
 import com.hoffenkloffen.radio.EpisodeActivity;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
-import com.hoffenkloffen.radio.utils.EpisodeParser;
+import com.hoffenkloffen.radio.rthk.handlers.EpisodeHandler;
 
 public class MainActivity extends Activity {
 
     private static final String TAG = "MainActivity";
+
+    private EpisodeHandler episodeHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
+
+        episodeHandler = new EpisodeHandler();
 
         startFromUri();
     }
@@ -40,10 +44,12 @@ public class MainActivity extends Activity {
 
     private void startFromUri() {
         if (!isViewAction()) return;
-        if (!isEpisodeUri()) return;
 
         Uri uri = getIntent().getData();
-        Episode episode = getEpisode(uri);
+
+        if (!episodeHandler.isValid(uri)) return;
+
+        Episode episode = episodeHandler.getEpisode(uri);
 
         if (episode == null) return;
 
@@ -59,21 +65,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    private Episode getEpisode(Uri uri) {
-        EpisodeParser parser = new EpisodeParser();
-
-        return parser.parse(uri);
-    }
-
     private boolean isViewAction() {
         String action = getIntent().getAction();
 
         return Intent.ACTION_VIEW.equals(action);
-    }
-
-    private boolean isEpisodeUri() {
-        Uri uri = getIntent().getData();
-
-        return uri != null && uri.toString().matches("http://www.rthk.org.hk/.*\\.asx");
     }
 }

@@ -31,6 +31,10 @@
                     android:scheme="http"
                     android:host="www.rthk.org.hk"
                     android:pathPattern=".*\\.asx" />
+                <!--data
+                    android:scheme="http"
+                    android:host="programme.rthk.hk"
+                    android:pathPattern="/channel/radio/programme.php" /-->
             </intent-filter>
         </activity>
         <activity
