@@ -3,8 +3,7 @@ package com.hoffenkloffen.radio.rthk.handlers;
 import android.net.Uri;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.SourceType;
-import com.hoffenkloffen.radio.utils.Downloader;
-import com.hoffenkloffen.radio.utils.EpisodeParser;
+import com.hoffenkloffen.radio.utils.*;
 
 import java.io.InputStream;
 import java.util.regex.Matcher;
@@ -12,32 +11,32 @@ import java.util.regex.Pattern;
 
 public class EpisodeHandler {
 
-    private Downloader downloader;
+    private ILogFacade log;
+    private IDownloader downloader;
     private EpisodeParser parser;
 
-    public EpisodeHandler() {
-        downloader = new Downloader();
-        parser = new EpisodeParser();
+    public EpisodeHandler(ILogFacade log, IDownloader downloader) {
+        this.log = log;
+        this.downloader = downloader;
+        parser = new EpisodeParser(log);
     }
 
-    public boolean isValid(Uri uri) {
+    public boolean isValid(String uri) {
         return uri != null && getSourceType(uri) == SourceType.FILE;
     }
 
-    public Episode getEpisode(Uri uri) {
+    public Episode getEpisode(String uri) {
 
         InputStream stream = downloader.getInputStream(uri);
 
         return parser.parse(stream);
     }
 
-    private SourceType getSourceType(Uri uri) {
+    private SourceType getSourceType(String uri) {
         if (uri == null) return SourceType.NONE;
 
-        String url = uri.toString();
-
-        if (url.matches("http://www.rthk.org.hk/.*\\.asx")) return SourceType.FILE;
-        if (url.matches("http://programme.rthk.hk/channel/radio/programme.php\\?.*m=episode")) return SourceType.PAGE;
+        if (uri.matches("http://www.rthk.org.hk/.*\\.asx")) return SourceType.FILE;
+        if (uri.matches("http://programme.rthk.hk/channel/radio/programme.php\\?.*m=episode")) return SourceType.PAGE;
 
         return SourceType.NONE;
     }

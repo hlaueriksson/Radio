@@ -1,17 +1,17 @@
 package com.hoffenkloffen.radio.player;
 
-import android.util.Log;
-import io.vov.vitamio.MediaPlayer;
+import com.hoffenkloffen.radio.utils.ILogFacade;
 
 public class MediaPlayerManager {
 
     private static final String TAG = "MediaPlayerManager";
 
-    private MediaPlayer player;
-
+    private ILogFacade log;
+    private IMediaPlayerFacade player;
     private String path;
 
-    public MediaPlayerManager(MediaPlayer player, String path) {
+    public MediaPlayerManager(ILogFacade log, IMediaPlayerFacade player, String path) {
+        this.log = log;
         this.player = player;
         this.path = path;
     }
@@ -21,7 +21,7 @@ public class MediaPlayerManager {
             player.setDataSource(path);
             player.prepare();
         } catch (Exception e) {
-            Log.e(TAG, "Prepare failed.", e);
+            log.e(TAG, "Prepare failed.", e);
         }
     }
 

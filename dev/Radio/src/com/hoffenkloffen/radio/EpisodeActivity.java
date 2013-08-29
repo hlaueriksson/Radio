@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
+import com.hoffenkloffen.radio.player.IMediaPlayerFacade;
+import com.hoffenkloffen.radio.player.MediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
+import com.hoffenkloffen.radio.utils.ILogFacade;
+import com.hoffenkloffen.radio.utils.LogFacade;
 import io.vov.vitamio.MediaPlayer;
 
 public class EpisodeActivity extends Activity {
@@ -29,9 +33,11 @@ public class EpisodeActivity extends Activity {
         text = (TextView) findViewById(R.id.text);
         text.setText(episode.getUrl());
 
+        ILogFacade log = new LogFacade();
         MediaPlayer player = new MediaPlayer(this);
+        IMediaPlayerFacade facade = new MediaPlayerFacade(player);
 
-        manager = new MediaPlayerManager(player, episode.getUrl());
+        manager = new MediaPlayerManager(log, facade, episode.getUrl());
         manager.prepare();
     }
 

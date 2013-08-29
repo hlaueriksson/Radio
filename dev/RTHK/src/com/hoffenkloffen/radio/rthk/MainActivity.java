@@ -11,6 +11,10 @@ import com.hoffenkloffen.radio.EpisodeActivity;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.rthk.handlers.EpisodeHandler;
+import com.hoffenkloffen.radio.utils.Downloader;
+import com.hoffenkloffen.radio.utils.IDownloader;
+import com.hoffenkloffen.radio.utils.ILogFacade;
+import com.hoffenkloffen.radio.utils.LogFacade;
 
 public class MainActivity extends Activity {
 
@@ -25,7 +29,10 @@ public class MainActivity extends Activity {
 
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
 
-        episodeHandler = new EpisodeHandler();
+        ILogFacade log = new LogFacade();
+        IDownloader downloader = new Downloader();
+
+        episodeHandler = new EpisodeHandler(log, downloader);
 
         startFromUri();
     }
@@ -47,9 +54,9 @@ public class MainActivity extends Activity {
 
         Uri uri = getIntent().getData();
 
-        if (!episodeHandler.isValid(uri)) return;
+        if (!episodeHandler.isValid(uri.toString())) return;
 
-        Episode episode = episodeHandler.getEpisode(uri);
+        Episode episode = episodeHandler.getEpisode(uri.toString());
 
         if (episode == null) return;
 

@@ -1,6 +1,5 @@
 package com.hoffenkloffen.radio.utils;
 
-import android.util.Log;
 import com.hoffenkloffen.radio.entities.Episode;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
@@ -16,6 +15,12 @@ import java.io.InputStream;
 public class EpisodeParser {
 
     private static final String TAG = "EpisodeParser";
+
+    private ILogFacade log;
+
+    public EpisodeParser(ILogFacade log) {
+        this.log = log;
+    }
 
     public Episode parse(InputStream stream) {
         Document doc = getDocument(stream);
@@ -34,7 +39,7 @@ public class EpisodeParser {
 
             return db.parse(is);
         } catch (Exception e) {
-            Log.e(TAG, "Get document failed.", e);
+            log.e(TAG, "Get document failed.", e);
         }
 
         return null;
@@ -50,7 +55,7 @@ public class EpisodeParser {
 
             return expr.evaluate(doc);
         } catch (XPathExpressionException e) {
-            Log.e(TAG, "Get value failed.", e);
+            log.e(TAG, "Get value failed.", e);
         }
 
         return null;

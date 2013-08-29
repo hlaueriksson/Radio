@@ -1,0 +1,24 @@
+<asx version = "3.0"> 
+	<title>radio2 ¡i sik ¡j¡i si ¡j¡i fung ¡j </title>
+	<abstract></abstract> 
+	<copyright>Radio Television Hong Kong</copyright> 
+	<author>rthk.hk</author> 
+	<entry> 
+	  <title>radio2 ¡i sik ¡j¡i si ¡j¡i fung ¡j </title>
+	  <abstract></abstract> 
+	  <copyright>Radio Television Hong Kong</copyright> 
+	  <author>rthk.hk</author> 
+ 	  <STARTTIME VALUE="00:04:00" /> 
+	  <DURATION VALUE="00:55:58" /> 
+	  <ref href = "mms://202.177.192.111/rthk/radio2/20130818/2013081812.asf"/> 
+	</entry>
+	<entry> 
+	  <title>radio2 ¡i sik ¡j¡i si ¡j¡i fung ¡j </title>
+	  <abstract></abstract> 
+	  <copyright>Radio Television Hong Kong</copyright> 
+	  <author>rthk.hk</author> 
+ 	  <STARTTIME VALUE="00:04:00" /> 
+	  <DURATION VALUE="00:55:58" /> 
+	  <ref href = "mms://202.177.192.111/rthk/radio2/20130818/2013081813.asf"/> 
+	</entry>
+</asx>

@@ -1,6 +1,5 @@
 package com.hoffenkloffen.radio.utils;
 
-import android.net.Uri;
 import android.os.StrictMode;
 import android.util.Log;
 import org.apache.http.client.HttpClient;
@@ -13,16 +12,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-public class Downloader {
+public class Downloader implements IDownloader {
 
     private static final String TAG = "Downloader";
 
-    public InputStream getInputStream(final Uri uri) {
+    public InputStream getInputStream(final String uri) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); // TODO: fix this
         StrictMode.setThreadPolicy(policy);
 
         try {
-            URL url = new URL(uri.toString());
+            URL url = new URL(uri);
 
             return url.openStream();
         } catch (IOException e) {
@@ -32,14 +31,14 @@ public class Downloader {
         return null;
     }
 
-    private String getResponse(Uri uri) {
+    private String getResponse(String uri) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); // TODO: fix this
         StrictMode.setThreadPolicy(policy);
 
         HttpClient httpClient = new DefaultHttpClient();
 
         try {
-            HttpGet httpGet = new HttpGet(uri.toString());
+            HttpGet httpGet = new HttpGet(uri);
 
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
 
