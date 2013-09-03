@@ -45,5 +45,6 @@
         <activity
             android:name="com.hoffenkloffen.radio.EpisodeActivity"
             android:label="@string/activity_episode" />
+        <activity android:name=".StationActivity" android:label="@string/activity_station" />
     </application>
 </manifest>

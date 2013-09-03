@@ -1600,6 +1600,11 @@
     "name": "Early Music Prayers at Night Hall"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/Evolution_of_Ballet_Music&p=3871",
+    "station": "radio4",
+    "name": "Evolution of Ballet Music 芭蕾音樂進化論"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/Filler&p=609",
     "station": "radio4",
     "name": "Filler"
@@ -1618,6 +1623,16 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/gloria&p=5873",
     "station": "radio4",
     "name": "Gloria"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/happy_hour_classic_hour&p=6002",
+    "station": "radio4",
+    "name": "Happy Hour Classic Hour 古典‧路上"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/happy_hour_jazzy_hour&p=6001",
+    "station": "radio4",
+    "name": "Happy Hour Jazzy Hour 爵士‧路上"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/HappyHour&p=2585",
@@ -1905,6 +1920,11 @@
     "name": "Beautiful Sunday [第五台與第二台聯播]"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/essenceofplays&p=6007",
+    "station": "radio5",
+    "name": "一劇之本"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/Chinesemusicandpiano&p=4764",
     "station": "radio5",
     "name": "文化四合院－－樂語琴話"
@@ -2050,9 +2070,19 @@
     "name": "長進課程~失敗者的教訓"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyliveencyclopedia&p=5997",
+    "station": "radio5",
+    "name": "長進課程~長者生活小百科"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyarchitecture&p=5826",
     "station": "radio5",
     "name": "長進課程~建築處處美"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlycourtesyofchina&p=5996",
+    "station": "radio5",
+    "name": "長進課程~禮義中華"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/celebletter&p=5613",
@@ -2108,6 +2138,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/neverendingstory&p=4023",
     "station": "radio5",
     "name": "香江暖流之故事說不完"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/techfreetalk&p=6010",
+    "station": "radio5",
+    "name": "科技自由談"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/nationaldayshow&p=5645",
@@ -2438,11 +2473,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/our15yearseditversion&p=5646",
     "station": "pth",
     "name": "我們的15年 - 青年大匯演（精裝版）"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/our15yearsdrama&p=5579",
-    "station": "pth",
-    "name": "我們的15年（廣播劇）"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/kongzhong&p=5174",

@@ -43,7 +43,7 @@ public class ProgramSpec extends BaseSpec {
         String json = SpecSupport.readFile("\\RTHK\\res\\raw\\programs.json");
         List<Program> result = Program.deserializeList(json);
 
-        assertThat(result.size(), is(equalTo(538)));
+        assertThat(result.size(), is(equalTo(544)));
 
         assertThat(result.get(0).getUrl(), is(equalTo(program.getUrl())));
         assertThat(result.get(0).getName(), is(equalTo(program.getName())));

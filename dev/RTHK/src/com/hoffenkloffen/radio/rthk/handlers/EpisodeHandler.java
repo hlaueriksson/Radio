@@ -3,13 +3,16 @@ package com.hoffenkloffen.radio.rthk.handlers;
 import android.net.Uri;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.SourceType;
-import com.hoffenkloffen.radio.utils.*;
+import com.hoffenkloffen.radio.utils.EpisodeParser;
+import com.hoffenkloffen.radio.utils.IDownloader;
+import com.hoffenkloffen.radio.utils.IEpisodeHandler;
+import com.hoffenkloffen.radio.utils.ILogFacade;
 
 import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EpisodeHandler {
+public class EpisodeHandler implements IEpisodeHandler {
 
     private ILogFacade log;
     private IDownloader downloader;
