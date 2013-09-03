@@ -14,8 +14,8 @@ var pattern = "<a href=\"(http://programme.rthk.hk/channel/radio/programme.php.*
 var result = new List<object>();
 
 foreach (Match match in Regex.Matches(html, pattern)) {
-	var program = new { Url = match.Groups[1].Value, Station = match.Groups[2].Value, Name = match.Groups[3].Value.Trim() };
-	if (program.Station == "tv") continue; // Skip 電視 TV
+	var program = new { url = match.Groups[1].Value, station = match.Groups[2].Value, name = match.Groups[3].Value.Trim() };
+	if (program.station == "tv") continue; // Skip 電視 TV
 	result.Add(program);
 }
 

@@ -14,7 +14,7 @@ var pattern = "<div class=\"channeljump\"><a href=\"(#.*?)\">(.*?)</a></div>";
 var result = new List<object>();
 
 foreach (Match match in Regex.Matches(html, pattern)) {
-	var station = new { Url = url + match.Groups[1].Value, Name = match.Groups[2].Value };
+	var station = new { url = url + match.Groups[1].Value, name = match.Groups[2].Value };
 	result.Add(station);
 }
 

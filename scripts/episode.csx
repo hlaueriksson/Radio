@@ -11,6 +11,6 @@ var html = client.DownloadString(url);
 var pattern = "href=\"(http://www.rthk.org.hk/asx/rthk/.*asx)\"";
 
 foreach (Match match in Regex.Matches(html, pattern)) {
-	var episode = new { Url = match.Groups[1].Value };
-	Console.WriteLine(episode.Url);
+	var episode = new { url = match.Groups[1].Value };
+	Console.WriteLine(episode.url);
 }
