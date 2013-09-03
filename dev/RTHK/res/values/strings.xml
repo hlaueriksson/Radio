@@ -2,16 +2,4 @@
 <resources>
     <string name="app_name">RTHK</string>
     <string name="activity_main">RTHK</string>
-    <string name="radio1">第一台 Radio 1</string>
-    <string name="radio2">第二台 Radio 2</string>
-    <string name="radio3">第三台 Radio 3</string>
-    <string name="radio4">第四台 Radio 4</string>
-    <string name="radio5">第五台 Radio 5</string>
-    <string name="putonghua">普通話台 Putonghua Channel</string>
-    <string name="url_radio1">http://programme.rthk.hk/channel/radio/index_archive.php#r1</string>
-    <string name="url_radio2">http://programme.rthk.hk/channel/radio/index_archive.php#r2</string>
-    <string name="url_radio3">http://programme.rthk.hk/channel/radio/index_archive.php#r3</string>
-    <string name="url_radio4">http://programme.rthk.hk/channel/radio/index_archive.php#r4</string>
-    <string name="url_radio5">http://programme.rthk.hk/channel/radio/index_archive.php#r5</string>
-    <string name="url_putonghua">http://programme.rthk.hk/channel/radio/index_archive.php#rpth</string>
 </resources>
