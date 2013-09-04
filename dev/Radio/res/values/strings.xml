@@ -3,6 +3,7 @@
     <string name="app_name">Radio</string>
     <string name="activity_main">Radio</string>
     <string name="activity_station">Station</string>
+    <string name="activity_program">Program</string>
     <string name="activity_episode">Episode</string>
     <string name="play">Play</string>
     <string name="pause">Pause</string>

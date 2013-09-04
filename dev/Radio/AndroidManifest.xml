@@ -12,8 +12,5 @@
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name="com.hoffenkloffen.radio.EpisodeActivity"
-            android:label="@string/activity_episode" />
     </application>
 </manifest>

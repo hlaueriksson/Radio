@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
+import com.hoffenkloffen.radio.entities.Stream;
 import com.hoffenkloffen.radio.player.IMediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
@@ -14,32 +15,40 @@ import com.hoffenkloffen.radio.utils.ILogFacade;
 import com.hoffenkloffen.radio.utils.LogFacade;
 import io.vov.vitamio.MediaPlayer;
 
-public class EpisodeActivity extends Activity {
+public abstract class BaseEpisodeActivity extends Activity {
 
-    private static final String TAG = "EpisodeActivity";
+    private static final String TAG = BaseEpisodeActivity.class.getSimpleName();
 
     private MediaPlayerManager manager;
 
     private TextView text;
 
-    private Episode episode;
+    protected Episode episode;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.episode);
 
+        text = (TextView) findViewById(R.id.text);
+
         episode = getEpisode();
 
-        text = (TextView) findViewById(R.id.text);
-        text.setText(episode.getUrl());
+        String info = getInfo();
+        Stream stream = getStream();
+
+        text.setText(info);
 
         ILogFacade log = new LogFacade();
         MediaPlayer player = new MediaPlayer(this);
         IMediaPlayerFacade facade = new MediaPlayerFacade(player);
 
-        manager = new MediaPlayerManager(log, facade, episode.getUrl());
+        manager = new MediaPlayerManager(log, facade, stream.getUrl());
         manager.prepare();
     }
+
+    protected abstract String getInfo();
+
+    protected abstract Stream getStream();
 
     public void play(View view) {
         Log.d(TAG, "play");

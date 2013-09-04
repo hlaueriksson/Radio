@@ -44,14 +44,17 @@ public class EpisodeHandler implements IEpisodeHandler {
         return SourceType.NONE;
     }
 
-    private Uri getUri(String page) {
-        String pattern = "href=\"(http://www.rthk.org.hk/.*\\.asx)\"";
+    public String getUri(String page) {
+        String pattern = "href=\"(http://www.rthk.org.hk/asx/rthk/.*?asx)\"";
 
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(page);
 
-        if (!m.matches()) return null;
+        while (m.find()) {
 
-        return Uri.parse(m.group(1));
+            return m.group(1);
+        }
+
+        return null;
     }
 }

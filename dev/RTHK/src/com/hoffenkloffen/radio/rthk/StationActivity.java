@@ -24,6 +24,11 @@ public class StationActivity extends BaseStationActivity {
         return result;
     }
 
+    @Override
+    protected Class<?> getProgramActivityClass() {
+        return ProgramActivity.class;
+    }
+
     private String getStationId() {
 
         if(station.getUrl().endsWith("r1")) return "radio1"; // TODO: fix this

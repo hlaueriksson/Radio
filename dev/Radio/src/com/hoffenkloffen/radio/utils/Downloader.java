@@ -31,7 +31,7 @@ public class Downloader implements IDownloader {
         return null;
     }
 
-    private String getResponse(String uri) {
+    public String getResponse(String uri) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); // TODO: fix this
         StrictMode.setThreadPolicy(policy);
 

@@ -16,65 +16,63 @@ import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Program;
-import com.hoffenkloffen.radio.entities.Station;
-import com.hoffenkloffen.radio.utils.*;
 
 import java.util.List;
 
-public abstract class BaseStationActivity extends Activity {
+public abstract class BaseProgramActivity extends Activity {
 
-    private static final String TAG = BaseStationActivity.class.getSimpleName();
+    private static final String TAG = BaseProgramActivity.class.getSimpleName();
 
-    protected Station station;
+    protected Program program;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.station);
+        setContentView(R.layout.program);
 
-        station = getStation();
+        program = getProgram();
 
         ListView listview = (ListView) findViewById(R.id.listview);
 
-        List<Program> programs = getPrograms();
+        List<Episode> episodes = getEpisodes();
 
-        ProgramAdapter adapter = new ProgramAdapter(this, R.layout.station_list_item_program, programs);
+        EpisodeAdapter adapter = new EpisodeAdapter(this, R.layout.program_list_item_episode, episodes);
         listview.setAdapter(adapter);
 
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
-                Program program = (Program) parent.getItemAtPosition(position);
+                Episode episode = (Episode) parent.getItemAtPosition(position);
 
-                openProgram(program);
+                openEpisode(episode);
             }
         });
     }
 
-    protected abstract List<Program> getPrograms();
+    protected abstract List<Episode> getEpisodes();
 
-    protected abstract Class<?> getProgramActivityClass();
+    protected abstract Class<?> getEpisodeActivityClass();
 
-    private Station getStation() {
+    private Program getProgram() {
         Bundle extras = getIntent().getExtras();
-        String value = extras.getString(Constants.Station);
+        String value = extras.getString(Constants.Program);
 
-        return Station.deserialize(value);
+        return Program.deserialize(value);
     }
 
-    private void openProgram(Program program) {
-        Log.i(TAG, "openProgram: " + program.getName());
+    private void openEpisode(Episode episode) {
+        Log.i(TAG, "openEpisode: " + episode.getUrl());
 
-        Intent intent = new Intent(getBaseContext(), getProgramActivityClass());
-        intent.putExtra(Constants.Program, program.serialize());
+        Intent intent = new Intent(getBaseContext(), getEpisodeActivityClass());
+        intent.putExtra(Constants.Episode, episode.serialize());
 
         startActivity(intent);
     }
 
-    private class ProgramAdapter extends ArrayAdapter<Program> {
+    private class EpisodeAdapter extends ArrayAdapter<Episode> {
 
         private int resource;
 
-        public ProgramAdapter(Context context, int resource, List<Program> objects) {
+        public EpisodeAdapter(Context context, int resource, List<Episode> objects) {
             super(context, resource, objects);
             this.resource = resource;
         }
@@ -88,12 +86,12 @@ public abstract class BaseStationActivity extends Activity {
                 view = inflater.inflate(resource, null);
             }
 
-            Program program = getItem(position);
+            Episode episode = getItem(position);
 
-            if (program == null) return view;
+            if (episode == null) return view;
 
             TextView text = (TextView) view.findViewById(R.id.text);
-            if (text != null) text.setText(program.getName());
+            if (text != null) text.setText(episode.getTitle());
 
             return view;
         }

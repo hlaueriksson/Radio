@@ -86,7 +86,7 @@ public abstract class BaseMainActivity extends Activity {
     }
 
     private void start(Episode episode) {
-        Intent intent = new Intent(getBaseContext(), EpisodeActivity.class);
+        Intent intent = new Intent(getBaseContext(), BaseEpisodeActivity.class);
         intent.putExtra(Constants.Episode, episode.serialize());
 
         startActivity(intent);
