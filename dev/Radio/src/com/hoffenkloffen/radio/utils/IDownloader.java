@@ -5,4 +5,6 @@ import java.io.InputStream;
 public interface IDownloader {
 
     InputStream getInputStream(final String uri);
+
+    String getResponse(String uri);
 }

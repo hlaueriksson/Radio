@@ -1,6 +1,6 @@
 package com.hoffenkloffen.radio.utils;
 
-import com.hoffenkloffen.radio.entities.Episode;
+import com.hoffenkloffen.radio.entities.Stream;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 
@@ -12,23 +12,23 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.InputStream;
 
-public class EpisodeParser {
+public class StreamParser {
 
-    private static final String TAG = EpisodeParser.class.getSimpleName();
+    private static final String TAG = StreamParser.class.getSimpleName();
 
     private ILogFacade log;
 
-    public EpisodeParser(ILogFacade log) {
+    public StreamParser(ILogFacade log) {
         this.log = log;
     }
 
-    public Episode parse(InputStream stream) { // TODO: return File
+    public Stream parse(InputStream stream) {
         Document doc = getDocument(stream);
 
-        Episode episode = new Episode();
-        episode.setUrl(getValue(doc, "//@href[1]"));
+        Stream result = new Stream();
+        result.setUrl(getValue(doc, "//@href[1]"));
 
-        return episode;
+        return result;
     }
 
     private Document getDocument(InputStream stream) { // TODO: regex

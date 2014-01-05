@@ -3,7 +3,6 @@ package com.hoffenkloffen.radio;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,10 +13,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
-import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Station;
-import com.hoffenkloffen.radio.utils.*;
+import com.hoffenkloffen.radio.handlers.RadioHandler;
 
 import java.util.List;
 
@@ -25,18 +23,19 @@ public abstract class BaseStationActivity extends Activity {
 
     private static final String TAG = BaseStationActivity.class.getSimpleName();
 
-    protected Station station;
+    private RadioHandler radioHandler;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.station);
 
-        station = getStation();
+        radioHandler = getRadioHandler();
+
+        Station station = getStation();
+
+        List<Program> programs = radioHandler.getPrograms(station);
 
         ListView listview = (ListView) findViewById(R.id.listview);
-
-        List<Program> programs = getPrograms();
-
         ProgramAdapter adapter = new ProgramAdapter(this, R.layout.station_list_item_program, programs);
         listview.setAdapter(adapter);
 
@@ -50,7 +49,7 @@ public abstract class BaseStationActivity extends Activity {
         });
     }
 
-    protected abstract List<Program> getPrograms();
+    protected abstract RadioHandler getRadioHandler();
 
     protected abstract Class<?> getProgramActivityClass();
 

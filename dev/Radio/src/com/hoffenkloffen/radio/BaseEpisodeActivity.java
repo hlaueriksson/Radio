@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Stream;
+import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.player.IMediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
@@ -19,24 +20,23 @@ public abstract class BaseEpisodeActivity extends Activity {
 
     private static final String TAG = BaseEpisodeActivity.class.getSimpleName();
 
+    private RadioHandler radioHandler;
+
     private MediaPlayerManager manager;
 
     private TextView text;
-
-    protected Episode episode;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.episode);
 
+        radioHandler = getRadioHandler();
+
+        Episode episode = getEpisode();
+        Stream stream = radioHandler.getStream(episode);
+
         text = (TextView) findViewById(R.id.text);
-
-        episode = getEpisode();
-
-        String info = getInfo();
-        Stream stream = getStream();
-
-        text.setText(info);
+        text.setText("Here be some proper episode info");
 
         ILogFacade log = new LogFacade();
         MediaPlayer player = new MediaPlayer(this);
@@ -46,9 +46,7 @@ public abstract class BaseEpisodeActivity extends Activity {
         manager.prepare();
     }
 
-    protected abstract String getInfo();
-
-    protected abstract Stream getStream();
+    protected abstract RadioHandler getRadioHandler();
 
     public void play(View view) {
         Log.d(TAG, "play");

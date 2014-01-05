@@ -3,7 +3,6 @@ package com.hoffenkloffen.radio;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,7 +15,7 @@ import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Station;
-import com.hoffenkloffen.radio.utils.*;
+import com.hoffenkloffen.radio.handlers.RadioHandler;
 
 import java.util.List;
 
@@ -24,7 +23,7 @@ public abstract class BaseMainActivity extends Activity {
 
     private static final String TAG = BaseMainActivity.class.getSimpleName();
 
-    private IEpisodeHandler episodeHandler;
+    private RadioHandler radioHandler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,10 +32,11 @@ public abstract class BaseMainActivity extends Activity {
 
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
 
+        radioHandler = getRadioHandler();
+
+        List<Station> stations = radioHandler.getStations();
+
         ListView listview = (ListView) findViewById(R.id.listview);
-
-        List<Station> stations = getStations();
-
         StationAdapter adapter = new StationAdapter(this, R.layout.main_list_item_station, stations);
         listview.setAdapter(adapter);
 
@@ -49,14 +49,10 @@ public abstract class BaseMainActivity extends Activity {
             }
         });
 
-        episodeHandler = getEpisodeHandler();
-
-        startFromUri();
+        //startFromUri();
     }
 
-    protected abstract IEpisodeHandler getEpisodeHandler();
-
-    protected abstract List<Station> getStations();
+    protected abstract RadioHandler getRadioHandler();
 
     protected abstract Class<?> getStationActivityClass();
 
@@ -69,6 +65,7 @@ public abstract class BaseMainActivity extends Activity {
         startActivity(intent);
     }
 
+    /*
     private void startFromUri() { // TODO: this should handle main, station, program, episode
         if (!isViewAction()) return;
 
@@ -84,6 +81,7 @@ public abstract class BaseMainActivity extends Activity {
 
         start(episode);
     }
+    */
 
     private void start(Episode episode) {
         Intent intent = new Intent(getBaseContext(), BaseEpisodeActivity.class);
