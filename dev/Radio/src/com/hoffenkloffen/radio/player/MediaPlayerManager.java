@@ -4,7 +4,7 @@ import com.hoffenkloffen.radio.utils.ILogFacade;
 
 public class MediaPlayerManager {
 
-    private static final String TAG = "MediaPlayerManager";
+    private static final String TAG = MediaPlayerManager.class.getSimpleName();
 
     private ILogFacade log;
     private IMediaPlayerFacade player;

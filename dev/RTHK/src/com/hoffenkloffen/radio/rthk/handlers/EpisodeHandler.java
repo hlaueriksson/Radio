@@ -1,6 +1,5 @@
 package com.hoffenkloffen.radio.rthk.handlers;
 
-import android.net.Uri;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.SourceType;
 import com.hoffenkloffen.radio.utils.EpisodeParser;
@@ -12,7 +11,7 @@ import java.io.InputStream;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EpisodeHandler implements IEpisodeHandler {
+public class EpisodeHandler implements IEpisodeHandler { // TODO: should also handle stations, programs
 
     private ILogFacade log;
     private IDownloader downloader;

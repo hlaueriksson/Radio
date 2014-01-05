@@ -91,7 +91,7 @@ public abstract class BaseProgramActivity extends Activity {
             if (episode == null) return view;
 
             TextView text = (TextView) view.findViewById(R.id.text);
-            if (text != null) text.setText(episode.getTitle());
+            if (text != null) text.setText(episode.getName());
 
             return view;
         }

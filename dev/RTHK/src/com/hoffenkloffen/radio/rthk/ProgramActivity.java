@@ -39,7 +39,7 @@ public class ProgramActivity extends BaseProgramActivity {
 
             Episode episode = new Episode();
             episode.setUrl("http://programme.rthk.hk/channel/radio/" + m.group(1));
-            episode.setTitle(m.group(2).trim());
+            episode.setName(m.group(2).trim());
 
             result.add(episode);
         }

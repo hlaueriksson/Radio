@@ -14,7 +14,7 @@ import java.io.InputStream;
 
 public class EpisodeParser {
 
-    private static final String TAG = "EpisodeParser";
+    private static final String TAG = EpisodeParser.class.getSimpleName();
 
     private ILogFacade log;
 
@@ -22,7 +22,7 @@ public class EpisodeParser {
         this.log = log;
     }
 
-    public Episode parse(InputStream stream) {
+    public Episode parse(InputStream stream) { // TODO: return File
         Document doc = getDocument(stream);
 
         Episode episode = new Episode();
@@ -31,7 +31,7 @@ public class EpisodeParser {
         return episode;
     }
 
-    private Document getDocument(InputStream stream) {
+    private Document getDocument(InputStream stream) { // TODO: regex
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();

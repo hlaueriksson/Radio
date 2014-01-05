@@ -69,7 +69,7 @@ public abstract class BaseMainActivity extends Activity {
         startActivity(intent);
     }
 
-    private void startFromUri() {
+    private void startFromUri() { // TODO: this should handle main, station, program, episode
         if (!isViewAction()) return;
 
         Uri uri = getIntent().getData();

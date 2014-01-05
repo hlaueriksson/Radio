@@ -12,12 +12,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-public class Downloader implements IDownloader {
+public class Downloader implements IDownloader { // TODO: async
 
     private static final String TAG = "Downloader";
 
     public InputStream getInputStream(final String uri) {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); // TODO: fix this
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
         try {
@@ -32,7 +32,7 @@ public class Downloader implements IDownloader {
     }
 
     public String getResponse(String uri) {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); // TODO: fix this
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
         HttpClient httpClient = new DefaultHttpClient();

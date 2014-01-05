@@ -1,6 +1,5 @@
 package com.hoffenkloffen.radio.rthk;
 
-import android.util.Log;
 import com.hoffenkloffen.radio.BaseEpisodeActivity;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Stream;
@@ -39,7 +38,7 @@ public class EpisodeActivity extends BaseEpisodeActivity {
         response = downloader.getResponse(episode.getUrl());
     }
 
-    private String getInfo(String response) {
+    private String getInfo(String response) { // TODO: move to handler
         StringBuilder sb = new StringBuilder();
 
         String pattern = "<h3>(.*?)</h3>"; // Name
@@ -55,7 +54,7 @@ public class EpisodeActivity extends BaseEpisodeActivity {
         return sb.toString();
     }
 
-    private Stream getStream(String response) {
+    private Stream getStream(String response) { // TODO: move to base class
 
         ILogFacade log = new LogFacade();
         IDownloader downloader = new Downloader();

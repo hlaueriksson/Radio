@@ -3,6 +3,7 @@ package com.hoffenkloffen.radio.utils;
 import android.util.Log;
 
 public class LogFacade implements ILogFacade {
+
     @Override
     public int d(String tag, String msg) {
         return Log.d(tag, msg);
