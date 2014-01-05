@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ProgramHandler implements IProgramHandler {
 
-    private Context context;
+    private final Context context;
 
     public ProgramHandler(Context context) {
         this.context = context;

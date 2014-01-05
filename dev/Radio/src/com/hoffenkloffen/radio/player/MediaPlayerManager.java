@@ -6,9 +6,9 @@ public class MediaPlayerManager {
 
     private static final String TAG = MediaPlayerManager.class.getSimpleName();
 
-    private ILogFacade log;
-    private IMediaPlayerFacade player;
-    private String path;
+    private final ILogFacade log;
+    private final IMediaPlayerFacade player;
+    private final String path;
 
     public MediaPlayerManager(ILogFacade log, IMediaPlayerFacade player, String path) {
         this.log = log;

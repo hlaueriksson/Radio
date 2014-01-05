@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hoffenkloffen.radio.rthk"
-    android:versionCode="1"
-    android:versionName="0.1">
+          package="com.hoffenkloffen.radio.rthk"
+          android:versionCode="1"
+          android:versionName="0.1">
 
     <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="17" />
+            android:minSdkVersion="15"
+            android:targetSdkVersion="17"/>
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:label="@string/app_name"
-        android:icon="@drawable/ic_launcher">
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
         <activity
-            android:name="MainActivity"
-            android:label="@string/activity_main">
+                android:name="MainActivity"
+                android:label="@string/activity_main">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data
-                    android:scheme="http"
-                    android:host="www.rthk.org.hk"
-                    android:pathPattern=".*\\.asx" />
+                        android:scheme="http"
+                        android:host="www.rthk.org.hk"
+                        android:pathPattern=".*\\.asx"/>
                 <!--data
                     android:scheme="http"
                     android:host="programme.rthk.hk"
@@ -38,12 +38,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="io.vov.vitamio.activity.InitActivity"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".StationActivity" android:label="@string/activity_station" />
-        <activity android:name=".ProgramActivity" android:label="@string/activity_program" />
+                android:name="io.vov.vitamio.activity.InitActivity"
+                android:launchMode="singleTop"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".StationActivity" android:label="@string/activity_station"/>
+        <activity android:name=".ProgramActivity" android:label="@string/activity_program"/>
         <activity android:name=".EpisodeActivity" android:label="@string/activity_episode"/>
     </application>
 </manifest>

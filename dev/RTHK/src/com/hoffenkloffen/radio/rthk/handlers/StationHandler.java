@@ -9,7 +9,7 @@ import com.hoffenkloffen.radio.utils.ResourceLoader;
 import java.util.List;
 
 public class StationHandler implements IStationHandler {
-    private Context context;
+    private final Context context;
 
     public StationHandler(Context context) {
         this.context = context;

@@ -16,7 +16,7 @@ public class StreamParser {
 
     private static final String TAG = StreamParser.class.getSimpleName();
 
-    private ILogFacade log;
+    private final ILogFacade log;
 
     public StreamParser(ILogFacade log) {
         this.log = log;

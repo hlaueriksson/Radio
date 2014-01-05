@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class EpisodeHandler implements IEpisodeHandler {
 
-    private IDownloader downloader;
+    private final IDownloader downloader;
 
     public EpisodeHandler(IDownloader downloader) {
         this.downloader = downloader;

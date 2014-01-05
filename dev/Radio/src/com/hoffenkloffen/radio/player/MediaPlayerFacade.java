@@ -5,7 +5,7 @@ import io.vov.vitamio.MediaPlayer;
 import java.io.IOException;
 
 public class MediaPlayerFacade implements IMediaPlayerFacade {
-    private MediaPlayer player;
+    private final MediaPlayer player;
 
     public MediaPlayerFacade(MediaPlayer player) {
         this.player = player;

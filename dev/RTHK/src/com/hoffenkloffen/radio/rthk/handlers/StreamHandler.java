@@ -13,8 +13,8 @@ import java.util.regex.Pattern;
 
 public class StreamHandler implements IStreamHandler {
 
-    private IDownloader downloader;
-    private StreamParser parser;
+    private final IDownloader downloader;
+    private final StreamParser parser;
 
     public StreamHandler(ILogFacade log, IDownloader downloader) {
         this.downloader = downloader;
@@ -37,7 +37,6 @@ public class StreamHandler implements IStreamHandler {
         Matcher m = p.matcher(page);
 
         while (m.find()) {
-
             return m.group(1);
         }
 

@@ -12,7 +12,7 @@ public class ResourceLoader {
 
     private static final String TAG = ResourceLoader.class.getSimpleName();
 
-    private Context context;
+    private final Context context;
 
     public ResourceLoader(Context context) {
         this.context = context;

@@ -9,10 +9,10 @@ import java.util.List;
 
 public class RadioHandler {
 
-    private IStationHandler stationHandler;
-    private IProgramHandler programHandler;
-    private IEpisodeHandler episodeHandler;
-    private IStreamHandler streamHandler;
+    private final IStationHandler stationHandler;
+    private final IProgramHandler programHandler;
+    private final IEpisodeHandler episodeHandler;
+    private final IStreamHandler streamHandler;
 
     public RadioHandler(IStationHandler stationHandler, IProgramHandler programHandler, IEpisodeHandler episodeHandler, IStreamHandler streamHandler) {
 
