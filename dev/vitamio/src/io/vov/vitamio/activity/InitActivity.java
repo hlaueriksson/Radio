@@ -25,7 +25,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.WindowManager;
-import com.yixia.vitamio.library.R;
+
+import io.vov.vitamio.R;
 import io.vov.vitamio.Vitamio;
 
 import java.lang.ref.WeakReference;
@@ -51,7 +52,7 @@ public class InitActivity extends Activity {
 
       @Override
       protected Boolean doInBackground(Object... params) {
-        return Vitamio.initialize(InitActivity.this);
+        return Vitamio.initialize(InitActivity.this, R.raw.libarm);
       }
 
       @Override

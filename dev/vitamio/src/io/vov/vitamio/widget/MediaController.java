@@ -18,9 +18,11 @@
 package io.vov.vitamio.widget;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Rect;
 import android.media.AudioManager;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
@@ -29,16 +31,17 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
-import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
-import com.yixia.vitamio.library.R;
+import java.lang.reflect.Method;
 
+import io.vov.vitamio.R;
 import io.vov.vitamio.utils.Log;
 import io.vov.vitamio.utils.StringUtils;
 
@@ -81,7 +84,7 @@ public class MediaController extends FrameLayout {
   private int mAnimStyle;
   private View mAnchor;
   private View mRoot;
-  private ProgressBar mProgress;
+  private SeekBar mProgress;
   private TextView mEndTime, mCurrentTime;
   private TextView mFileName;
   private OutlineTextView mInfoView;
@@ -195,6 +198,19 @@ public class MediaController extends FrameLayout {
     mWindow.setOutsideTouchable(true);
     mAnimStyle = android.R.style.Animation;
   }
+  
+  @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+	public void setWindowLayoutType() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			try {
+				mAnchor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
+				Method setWindowLayoutType = PopupWindow.class.getMethod("setWindowLayoutType", new Class[] { int.class });
+				setWindowLayoutType.invoke(mWindow, WindowManager.LayoutParams.TYPE_APPLICATION_ATTACHED_DIALOG);
+			} catch (Exception e) {
+				Log.e("setWindowLayoutType", e);
+			}
+		}
+	}
 
   /**
    * Set the view that acts as the anchor for the control view. This can for
@@ -231,12 +247,11 @@ public class MediaController extends FrameLayout {
       mPauseButton.setOnClickListener(mPauseListener);
     }
 
-    mProgress = (ProgressBar) v.findViewById(R.id.mediacontroller_seekbar);
+    mProgress = (SeekBar) v.findViewById(R.id.mediacontroller_seekbar);
     if (mProgress != null) {
       if (mProgress instanceof SeekBar) {
         SeekBar seeker = (SeekBar) mProgress;
         seeker.setOnSeekBarChangeListener(mSeekListener);
-        seeker.setThumbOffset(1);
       }
       mProgress.setMax(1000);
     }
@@ -287,14 +302,6 @@ public class MediaController extends FrameLayout {
     mInfoView = v;
   }
 
-  private void disableUnsupportedButtons() {
-    try {
-      if (mPauseButton != null && !mPlayer.canPause())
-        mPauseButton.setEnabled(false);
-    } catch (IncompatibleClassChangeError ex) {
-    }
-  }
-
   /**
    * <p>
    * Change the animation style resource for this controller.
@@ -324,7 +331,6 @@ public class MediaController extends FrameLayout {
     if (!mShowing && mAnchor != null && mAnchor.getWindowToken() != null) {
       if (mPauseButton != null)
         mPauseButton.requestFocus();
-      disableUnsupportedButtons();
 
       if (mFromXml) {
         setVisibility(View.VISIBLE);
@@ -335,6 +341,7 @@ public class MediaController extends FrameLayout {
         Rect anchorRect = new Rect(location[0], location[1], location[0] + mAnchor.getWidth(), location[1] + mAnchor.getHeight());
 
         mWindow.setAnimationStyle(mAnimStyle);
+        setWindowLayoutType();
         mWindow.showAtLocation(mAnchor, Gravity.NO_GRAVITY, anchorRect.left, anchorRect.bottom);
       }
       mShowing = true;
@@ -467,7 +474,6 @@ public class MediaController extends FrameLayout {
       mPauseButton.setEnabled(enabled);
     if (mProgress != null)
       mProgress.setEnabled(enabled);
-    disableUnsupportedButtons();
     super.setEnabled(enabled);
   }
 
@@ -493,12 +499,6 @@ public class MediaController extends FrameLayout {
     boolean isPlaying();
 
     int getBufferPercentage();
-
-    boolean canPause();
-
-    boolean canSeekBackward();
-
-    boolean canSeekForward();
   }
 
 }

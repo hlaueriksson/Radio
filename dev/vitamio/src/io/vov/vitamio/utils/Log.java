@@ -15,13 +15,12 @@
  */
 package io.vov.vitamio.utils;
 
-import com.yixia.vitamio.library.BuildConfig;
+import io.vov.vitamio.BuildConfig;
 
 import java.util.MissingFormatArgumentException;
 
 public class Log {
 	public static final String TAG = "Vitamio[Player]";
-	public static final String DEBUG_TAG = "debug.vitamio";
 
 	public static void i(String msg, Object... args) {
 		try {
