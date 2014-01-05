@@ -1,33 +1,33 @@
 [
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/legco_2012_forum_gc&p=5611",
-    "station": "radio1",
-    "name": "2012 立法會選舉論壇 - 地區選舉"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/legco_2012_forum_fc&p=5610",
-    "station": "radio1",
-    "name": "2012 立法會選舉論壇 -功能界別"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/legco_2012_forum&p=5601",
-    "station": "radio1",
-    "name": "2012 立法會選舉論壇－區議會(第二)功能界別"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ce_electionforum&p=5499",
-    "station": "radio1",
-    "name": "2012行政長官選舉辯論"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_london_olympics_closing&p=5599",
-    "station": "radio1",
-    "name": "2012倫敦奧運閉幕禮 (與普通話台、數碼31台聯播)"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_london_olympics_opening&p=5590",
     "station": "radio1",
     "name": "2012倫敦奧運開幕禮 (與普通話台、數碼31台聯播)"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_hk_news_yearender&p=6113",
+    "station": "radio1",
+    "name": "2013本港社會大事回顧"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_hk_politics_yearender&p=6112",
+    "station": "radio1",
+    "name": "2013本港政治大事回顧"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_financial_news_yearender&p=6109",
+    "station": "radio1",
+    "name": "2013本港財經大事回顧"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013chinataiwan_news_yearender&p=6111",
+    "station": "radio1",
+    "name": "2013兩岸大事回顧"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_interntl_news_yearender&p=6110",
+    "station": "radio1",
+    "name": "2013國際大事回顧"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/bbcweekly&p=1094",
@@ -90,11 +90,6 @@
     "name": "千禧年代"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/hk2000_ce_election&p=5500",
-    "station": "radio1",
-    "name": "千禧年代特首選舉號外"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/50YearsAfter&p=3658",
     "station": "radio1",
     "name": "五十年後"
@@ -113,16 +108,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ceu_pth&p=5945",
     "station": "radio1",
     "name": "反斗普通話"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/civil_society&p=5679",
-    "station": "radio1",
-    "name": "公民社會：過去與未來"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_chinese_communist_party&p=5685",
-    "station": "radio1",
-    "name": "中共新班子"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/5_flag_poles&p=5059",
@@ -155,14 +140,9 @@
     "name": "北京王師傅"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ce_qanda_2012&p=5673",
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/hotline_2013&p=6058",
     "station": "radio1",
-    "name": "立法會行政長官答問會"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/legco_election_2012_special&p=5632",
-    "station": "radio1",
-    "name": "立法會選舉特輯"
+    "name": "台長熱線"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_hk_news_yearender&p=5717",
@@ -175,19 +155,9 @@
     "name": "自由風自由 PHONE"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/openline_openview_ce_election&p=5502",
-    "station": "radio1",
-    "name": "自由風自由PHONE特首選舉號外"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/holo_good_joe&p=5887",
     "station": "radio1",
     "name": "好佬唔易做"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_lamma_ferry_disaster&p=5653",
-    "station": "radio1",
-    "name": "全城同心共悼海難專輯"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_policy_address_qanda&p=5750",
@@ -210,14 +180,14 @@
     "name": "行政長官答問大會"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_ce_qanda_03&p=6044",
+    "station": "radio1",
+    "name": "行政長官答問大會"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_ce_qanda&p=5899",
     "station": "radio1",
     "name": "行政長官答問會"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ce_election_committee_qanda&p=5501",
-    "station": "radio1",
-    "name": "行政長官選舉選舉委員會答問大會"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/earth_708&p=5752",
@@ -275,11 +245,6 @@
     "name": "波樂無窮"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/couplet_time&p=5142",
-    "station": "radio1",
-    "name": "奇聯．祺賞"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/Knowledge_Society&p=1905",
     "station": "radio1",
     "name": "知識會社 [第一台與第二台聯播]"
@@ -313,11 +278,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_policy_address&p=5745",
     "station": "radio1",
     "name": "施政報告演辭"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ce_policy_news&p=1760",
-    "station": "radio1",
-    "name": "施政報告論壇"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/May_fourth&p=4514",
@@ -380,11 +340,6 @@
     "name": "音樂情人"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/musicloverandfriendsunplugged&p=5252",
-    "station": "radio1",
-    "name": "音樂情人 & Friends unplugged 音樂會"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/hk_pop_history&p=5882",
     "station": "radio1",
     "name": "音樂從呢道開始"
@@ -430,11 +385,6 @@
     "name": "旅遊樂園"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/japan_art_tour&p=5475",
-    "station": "radio1",
-    "name": "從一個南瓜開始"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/linuscheungsworld&p=5155",
     "station": "radio1",
     "name": "張永霖的世界"
@@ -453,11 +403,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/voices&p=5696",
     "station": "radio1",
     "name": "眾言堂"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/life_and_statistics&p=5527",
-    "station": "radio1",
-    "name": "統計人生"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/japan_art_tour_2&p=5639",
@@ -540,11 +485,6 @@
     "name": "奧運第一台"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/budget_forum&p=2965",
-    "station": "radio1",
-    "name": "預算案論壇"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/movieworld&p=1091",
     "station": "radio1",
     "name": "電影兩面睇"
@@ -610,11 +550,6 @@
     "name": "舊日的足跡"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/usedbookrecyclingcampaign2012&p=5600",
-    "station": "radio1",
-    "name": "舊書回收義賣大行動2012"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_debate&p=5806",
     "station": "radio1",
     "name": "辯論宗師"
@@ -648,11 +583,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013_hlale&p=5856",
     "station": "radio2",
     "name": "2013高級程度會考 英語運用 聽力測驗"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/388comeandtalk&p=5228",
-    "station": "radio2",
-    "name": "388放題"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/Waybackintolove&p=4556",
@@ -735,16 +665,6 @@
     "name": "中文歌曲龍虎榜"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2012_solar20120811&p=5593",
-    "station": "radio2",
-    "name": "太陽計劃2012人人就位孝愛互傳特輯"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2012solar_mitfinale&p=5615",
-    "station": "radio2",
-    "name": "太陽計劃2012展翅青見夢飛行"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013solar0827&p=5999",
     "station": "radio2",
     "name": "太陽計劃2013展翅青見夢飛行"
@@ -770,14 +690,14 @@
     "name": "有冇搞錯"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/literatureseminar&p=5626",
-    "station": "radio2",
-    "name": "豆棚說書"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/ilikecantopop&p=5230",
     "station": "radio2",
     "name": "我愛廣東歌"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/poem_with_you&p=6045",
+    "station": "radio2",
+    "name": "和你說說詩"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/sundayplayground&p=2545",
@@ -788,11 +708,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/youngpolicitianlunarspecial&p=5811",
     "station": "radio2",
     "name": "金蛇同你做生日　政壇新秀賀初七"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2012lunarnewyear&p=5297",
-    "station": "radio2",
-    "name": "金龍賜福新春團拜"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/KnowledgeCo&p=1886",
@@ -820,14 +735,14 @@
     "name": "思潮作動"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2011_discoverTech&p=5094",
-    "station": "radio2",
-    "name": "科學大發現"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/YoungPolitican&p=2517",
     "station": "radio2",
     "name": "政壇新秀訓練班"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/readyourmind&p=6063",
+    "station": "radio2",
+    "name": "捉心理"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013_songdedication&p=5857",
@@ -875,6 +790,11 @@
     "name": "第三十五屆十大中文金曲頒獎音樂會特輯"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013_cash&p=6101",
+    "station": "radio2",
+    "name": "第廿五屆CASH流行曲創作大賽"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/HomeSweetHome&p=3977",
     "station": "radio2",
     "name": "甜心家族"
@@ -895,14 +815,14 @@
     "name": "敏感時刻"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013_anitamuispecial&p=6102",
+    "station": "radio2",
+    "name": "梅艷芳﹒10﹒思念﹒音樂﹒會"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/bookview&p=421",
     "station": "radio2",
     "name": "開卷樂"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2012_bookprizespecial&p=5555",
-    "station": "radio2",
-    "name": "開卷樂之第五屆香港書獎特輯"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/bookview_6thspecial&p=5936",
@@ -933,6 +853,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/countdown2013&p=5735",
     "station": "radio2",
     "name": "齊齊Countdown迎2013"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/countdown2014&p=6103",
+    "station": "radio2",
+    "name": "齊齊倒數迎2014"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/keepuco&p=407",
@@ -997,7 +922,12 @@
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/3_jump&p=5159",
     "station": "radio3",
-    "name": "3 O'Clock Jump"
+    "name": "3 O'clock Jump"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/north_american_xmas&p=6095",
+    "station": "radio3",
+    "name": "A North American Christmas"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/alltheway&p=547",
@@ -1045,11 +975,6 @@
     "name": "Budget Speech 2013-14"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/ce_election_debate_2012&p=5497",
-    "station": "radio3",
-    "name": "CE Election Debate 2012"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/ce_newsconference&p=1970",
     "station": "radio3",
     "name": "CE's News Conference"
@@ -1065,14 +990,19 @@
     "name": "Chief Executive Phone-in"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/christmas_countdown&p=6068",
+    "station": "radio3",
+    "name": "Christmas Countdown"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/christmas_morning&p=6098",
+    "station": "radio3",
+    "name": "Christmas Morning"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/worldvibes_xmas12&p=5724",
     "station": "radio3",
     "name": "Christmas Round the World"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/clockenflap&p=5694",
-    "station": "radio3",
-    "name": "Clockenflap"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/cooltrax&p=1801",
@@ -1110,6 +1040,11 @@
     "name": "From Top to Bottom"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/ghostbusting_hk&p=6043",
+    "station": "radio3",
+    "name": "Ghostbusting Hong Kong"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/hark_herald&p=5710",
     "station": "radio3",
     "name": "Hark! The Herald Angels Swing"
@@ -1123,6 +1058,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/urdu&p=4211",
     "station": "radio3",
     "name": "Hong Kong Ki Shaam"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/hk_lowdown&p=6009",
+    "station": "radio3",
+    "name": "Hong Kong Lowdown"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/hongkongtoday&p=513",
@@ -1143,6 +1083,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/james_ross&p=5980",
     "station": "radio3",
     "name": "James Ross"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/jazz_milestones&p=6105",
+    "station": "radio3",
+    "name": "Jazz Milestones Old and New"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/johnculkin&p=557",
@@ -1230,6 +1175,11 @@
     "name": "News At Six"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/newswrap&p=1959",
+    "station": "radio3",
+    "name": "NewsWrap"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/nightmusic&p=512",
     "station": "radio3",
     "name": "Night Music"
@@ -1245,9 +1195,19 @@
     "name": "Operation Santa Claus 2012 Closing Ceremony"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/opsanta12&p=5680",
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/opsanta13&p=6054",
     "station": "radio3",
-    "name": "Operation Santa Claus 2012 Launch Ceremony"
+    "name": "Operation Santa Claus 2013 Launch Ceremony"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/pete_moore_santa&p=6099",
+    "station": "radio3",
+    "name": "Pete Moore Band's Santa Session"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/petes_xmas_collection&p=6082",
+    "station": "radio3",
+    "name": "Pete's Christmas Collection"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/petes_private_collection&p=4557",
@@ -1285,6 +1245,11 @@
     "name": "Policy Address"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/pop_fugitives&p=6055",
+    "station": "radio3",
+    "name": "Pop Fugitives"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/reflectionsfromasia&p=524",
     "station": "radio3",
     "name": "Reflections From Asia"
@@ -1310,6 +1275,11 @@
     "name": "Santa's Last Stand"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/santas_last_stand_ep&p=6100",
+    "station": "radio3",
+    "name": "Santa's Last Stand - Extra Portions"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/santas_silver_auction&p=5705",
     "station": "radio3",
     "name": "Santa's Silver Auction Party"
@@ -1323,11 +1293,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/saturdaymorning&p=527",
     "station": "radio3",
     "name": "Saturday Morning"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/sat_night&p=5621",
-    "station": "radio3",
-    "name": "Saturday Night"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/simon_willson&p=1925",
@@ -1390,6 +1355,11 @@
     "name": "The Financial Secretary Phone-in"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/the_gaybourhood&p=6006",
+    "station": "radio3",
+    "name": "The Gaybourhood"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/the_in_show&p=5656",
     "station": "radio3",
     "name": "The In Show"
@@ -1398,6 +1368,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/the_indie_show&p=5897",
     "station": "radio3",
     "name": "The Indie Show"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/lamest_show_year&p=6114",
+    "station": "radio3",
+    "name": "The Lamest Show of the Year"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/the_saturday_skank&p=5906",
@@ -1428,11 +1403,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/today_at_seven&p=2502",
     "station": "radio3",
     "name": "Today at Seven"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/us_election_special&p=3602",
-    "station": "radio3",
-    "name": "US Election Special"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/what_do_you_do&p=5905",
@@ -1490,11 +1460,6 @@
     "name": "All The Way With Ray [Merge with Radio 3]"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/An_die_Musik&p=3497",
-    "station": "radio4",
-    "name": "An die Musik 樂在心中"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/artbeat&p=628",
     "station": "radio4",
     "name": "Artbeat"
@@ -1530,6 +1495,11 @@
     "name": "Bravo China 為中國喝采"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/britains_britten&p=6053",
+    "station": "radio4",
+    "name": "Britain’s Britten 布烈頓‧樂‧迷"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/Cantilena&p=4193",
     "station": "radio4",
     "name": "Cantilena 自投羅網"
@@ -1555,14 +1525,14 @@
     "name": "Christmas Concert in the Park - A Midwinter Night 聖誕園林音樂會─平安夜之夢"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/xmas_concert_in_the_park_2013&p=6084",
+    "station": "radio4",
+    "name": "CHRISTMAS CONCERT IN THE PARK – PARTY AT TAMAR 聖誕園林音樂會─海濱隨想曲"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/churchservice&p=629",
     "station": "radio4",
     "name": "Church Service"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/classical_music_abc&p=5596",
-    "station": "radio4",
-    "name": "Classical Music ABC 古典音樂ABC"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/Collage&p=5043",
@@ -1583,11 +1553,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/dance_of_the_golden_snake&p=5807",
     "station": "radio4",
     "name": "Dance of the Golden Snake 金蛇狂舞慶新春"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/debussys_piano_works&p=5597",
-    "station": "radio4",
-    "name": "Debussy's Piano Works 德布西的鋼琴音樂"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/drums_and_gongs&p=5777",
@@ -1640,24 +1605,9 @@
     "name": "Happy Hour 歡樂時光"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/hks_mondern_sound&p=5616",
-    "station": "radio4",
-    "name": "HK's Modern Sound 樂在「妍」談間—香港作曲家剪影"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/HKPO_ZhuDan&p=4542",
     "station": "radio4",
     "name": "HKPO with Dan Zhu 香港管弦樂團 - 小提琴超新星 - 朱丹"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/irc_2012_rpt&p=5583",
-    "station": "radio4",
-    "name": "International Rostrum of Composers 2012 (Repeat) 2012 國際作曲家交流會議 (重播)"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/irc_2012&p=5582",
-    "station": "radio4",
-    "name": "International Rostrum of Composers 2012 2012 國際作曲家交流會議"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/irc_2013_rpt&p=5943",
@@ -1745,11 +1695,6 @@
     "name": "Musical Exchange 談天論樂"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/national_day_fireworks_2012&p=5647",
-    "station": "radio4",
-    "name": "National Day Fireworks 2012 國慶煙花匯演 2012"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/New_Releases&p=4644",
     "station": "radio4",
     "name": "New Releases 新唱片大本營"
@@ -1775,11 +1720,6 @@
     "name": "Non-stop Classics 美樂無休"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/PianoExamE2011&p=5018",
-    "station": "radio4",
-    "name": "Piano Exam 2011"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/piano_exam_2013_english&p=5682",
     "station": "radio4",
     "name": "Piano Exams 2013"
@@ -1788,11 +1728,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/Playbyear&p=4841",
     "station": "radio4",
     "name": "Play by Ear 週末隨想"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/playbill&p=5643",
-    "station": "radio4",
-    "name": "Playbill 音樂劇巡禮"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/R4_Buddies&p=4154",
@@ -1875,6 +1810,11 @@
     "name": "University Voices 大學之聲"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/viva_verdi&p=6020",
+    "station": "radio4",
+    "name": "Viva Verdi 威威！威爾第"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/whos_afraid_of_wagner&p=5894",
     "station": "radio4",
     "name": "Who’s Afraid of Wagner 重新認識華格納"
@@ -1905,11 +1845,6 @@
     "name": "Young Music Makers 2012 樂壇新秀 2012"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/PianoExamC2011&p=5017",
-    "station": "radio4",
-    "name": "鋼琴考試講座 2011"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/piano_exam_2013_chin&p=5681",
     "station": "radio4",
     "name": "鋼琴考試講座 2013"
@@ -1925,9 +1860,9 @@
     "name": "一劇之本"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/Chinesemusicandpiano&p=4764",
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/5elements&p=6008",
     "station": "radio5",
-    "name": "文化四合院－－樂語琴話"
+    "name": "文化四合院～五行術數"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/worldbook&p=3931",
@@ -1943,11 +1878,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/culturewritings&p=4954",
     "station": "radio5",
     "name": "文化四合院－古文觀止"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/culture_music&p=5240",
-    "station": "radio5",
-    "name": "文化四合院－真音樂"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/culture_classic&p=5594",
@@ -1995,11 +1925,6 @@
     "name": "好孩子星期天"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/hongkong15years&p=5589",
-    "station": "radio5",
-    "name": "此時此處此模樣"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/bigbrothersong&p=4439",
     "station": "radio5",
     "name": "好歌安哥"
@@ -2035,19 +1960,14 @@
     "name": "長者空中進修學院 - 中國走進世界"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/senior&p=730",
-    "station": "radio5",
-    "name": "松柏之聲"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyinvestment&p=5486",
-    "station": "radio5",
-    "name": "長進課程 - 投資有道"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/pth2013&p=5842",
     "station": "radio5",
     "name": "長進課程 - 金曲細聽普通話(I)"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/pth201314&p=5989",
+    "station": "radio5",
+    "name": "長進課程 - 金曲細聽普通話(II)"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlypth&p=5496",
@@ -2075,6 +1995,11 @@
     "name": "長進課程~長者生活小百科"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyfinancialknack&p=5998",
+    "station": "radio5",
+    "name": "長進課程~長者理財技巧"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyarchitecture&p=5826",
     "station": "radio5",
     "name": "長進課程~建築處處美"
@@ -2090,24 +2015,19 @@
     "name": "長進課程－名人家書"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlysick&p=5485",
-    "station": "radio5",
-    "name": "長進課程－長者常見疾病"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/elderlyhealthproject&p=5612",
     "station": "radio5",
     "name": "長進課程－長者健康攻略"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/familyscripture&p=5487",
-    "station": "radio5",
-    "name": "長進課程－家訓出英才"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/pekingopera&p=5563",
     "station": "radio5",
     "name": "京劇"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/hugnature&p=6017",
+    "station": "radio5",
+    "name": "抱擁大自然"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/knowledge&p=1900",
@@ -2145,11 +2065,6 @@
     "name": "科技自由談"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/nationaldayshow&p=5645",
-    "station": "radio5",
-    "name": "香港同胞慶祝中華人民共和國成立六十三週年文藝晚會"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/hkhistory&p=4351",
     "station": "radio5",
     "name": "香港歷史系列"
@@ -2163,11 +2078,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/Apower&p=4442",
     "station": "radio5",
     "name": "耆力量"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/familyteach&p=2500",
-    "station": "radio5",
-    "name": "家家有教"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/smilefamily&p=4304",
@@ -2240,6 +2150,11 @@
     "name": "聖誕子夜彌撒"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/midnightmass2013&p=6097",
+    "station": "radio5",
+    "name": "聖誕子夜彌撒"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/trendyglasses&p=5910",
     "station": "radio5",
     "name": "新潮老花鏡"
@@ -2248,11 +2163,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/filmworld&p=733",
     "station": "radio5",
     "name": "電影乾坤"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/tcoobrelay&p=5301",
-    "station": "radio5",
-    "name": "粵劇轉播"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio5/chinesemusic&p=4454",
@@ -2320,21 +2230,6 @@
     "name": "2012大專普通話辯論賽"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2012ce_election_debate&p=5510",
-    "station": "pth",
-    "name": "2012行政長官選舉辯論"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/lundunaoyunbimuli&p=5608",
-    "station": "pth",
-    "name": "2012倫敦奧運閉幕禮 ( 與第一台﹑數碼31台聯播 )"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2012gaoxiao&p=5637",
-    "station": "pth",
-    "name": "2012粵港澳高校普通話辯論賽"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2013zhengfushizhengpc&p=5755",
     "station": "pth",
     "name": "2013政府施政報告-行政長官立法會答問大會"
@@ -2343,6 +2238,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2013zhengfushizheng&p=5754",
     "station": "pth",
     "name": "2013政府施政報告發佈會"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2013yuegangaogaoxiao&p=6019",
+    "station": "pth",
+    "name": "2013粵港澳高校辯論賽"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/OldiesStationWX&p=2258",
@@ -2378,16 +2278,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/uxiubang&p=5970",
     "station": "pth",
     "name": "U秀幫"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/zhanzaijiujiaer&p=5693",
-    "station": "pth",
-    "name": "『站在9+2最前沿』（衛星直播）"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/shibada&p=5677",
-    "station": "pth",
-    "name": "十八大全國代表大會開幕特輯"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/12jiequanguorendayicihuiyi&p=5845",
@@ -2445,11 +2335,6 @@
     "name": "全球華語音樂網"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/GChina&p=812",
-    "station": "pth",
-    "name": "全球華語歌曲排行榜"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/quanqiuhuayugequpaihangbang&p=5972",
     "station": "pth",
     "name": "全球華語歌曲排行榜"
@@ -2470,19 +2355,9 @@
     "name": "忘了忘不了"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/our15yearseditversion&p=5646",
-    "station": "pth",
-    "name": "我們的15年 - 青年大匯演（精裝版）"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/kongzhong&p=5174",
     "station": "pth",
     "name": "空中結緣（普通話版）"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/jinquzhuanmendian&p=5209",
-    "station": "pth",
-    "name": "金曲專門店"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/zhitonglondon&p=5587",
@@ -2555,6 +2430,11 @@
     "name": "美麗人生"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/zhanzaijiujiaer2013&p=6012",
+    "station": "pth",
+    "name": "站在9+2最前沿"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2013caizhengyusuanan&p=5834",
     "station": "pth",
     "name": "財政預算案直播"
@@ -2563,6 +2443,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/2013caizhengyusuananjizhehui&p=5835",
     "station": "pth",
     "name": "財政預算案記者會"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/14thdazhuanputonghuabianlunsai&p=6061",
+    "station": "pth",
+    "name": "第十四屆大專普通話辯論賽"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/9thGlobalChart&p=4658",
@@ -2615,6 +2500,11 @@
     "name": "紫荊花常開"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/ptc1314&p=6073",
+    "station": "pth",
+    "name": "普通話台陪你一生一世（13，14）"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/ptcnews5&p=799",
     "station": "pth",
     "name": "普通話詳盡新聞 ( 晚上 )"
@@ -2630,19 +2520,9 @@
     "name": "單戀專家"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/xinyijiezhengzhiju&p=5683",
-    "station": "pth",
-    "name": "新一屆政治局常委中外記者會"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/newpeople&p=3087",
     "station": "pth",
     "name": "新人類、大世界"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/dangtamen&p=5609",
-    "station": "pth",
-    "name": "當她們遇上神舟九號載人航天代表團"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/aiqingbaobao&p=5977",
@@ -2653,11 +2533,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/xinzijingguangchang&p=5966",
     "station": "pth",
     "name": "新紫荊廣場"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/GreenExpress&p=4953",
-    "station": "pth",
-    "name": "粵港綠色專線"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/xinwencaijing930&p=5170",
@@ -2680,11 +2555,6 @@
     "name": "輕談淺唱不夜天 ( 與第一、二、五台聯播 )"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/geshengfeiyang&p=4873",
-    "station": "pth",
-    "name": "歌聲飛揚的年代"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/charmingchina&p=3952",
     "station": "pth",
     "name": "魅力中國"
@@ -2705,9 +2575,9 @@
     "name": "總理李克強中外記者會現場直播"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/globalchineseonline&p=3773",
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/hongxiannv&p=6074",
     "station": "pth",
-    "name": "環球華語在線"
+    "name": "懷念“女姐”紅線女"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/chudonghuanghun&p=5169",
