@@ -27,16 +27,16 @@ public class EpisodeHandler implements IEpisodeHandler {
         return getEpisodes(response);
     }
 
-    List<Episode> getEpisodes(String response) {
+    private List<Episode> getEpisodes(String response) {
         List<Episode> result = new ArrayList<Episode>();
 
-        String pattern = "<a href=\"(programme.php.*?m=episode)\">(.*?)</a>";
+        String pattern = "<div class=\"title\">.*<a href=\"(.*?)\">(.*?)</a>";
+        // TODO: <div class="desc">(.*?)<a href=".*" class="link-more">
 
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(response);
 
         while (m.find()) {
-
             Episode episode = new Episode();
             episode.setUrl("http://programme.rthk.hk/channel/radio/" + m.group(1));
             episode.setName(m.group(2).trim());

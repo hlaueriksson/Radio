@@ -5,7 +5,6 @@ import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StationHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StreamHandler;
 import com.hoffenkloffen.radio.utils.Downloader;
-import com.hoffenkloffen.radio.utils.LogFacade;
 
 public class MainActivity extends BaseMainActivity {
 
@@ -15,7 +14,7 @@ public class MainActivity extends BaseMainActivity {
                 new StationHandler(getApplicationContext()),
                 null,
                 null,
-                new StreamHandler(new LogFacade(), new Downloader()));
+                new StreamHandler(new Downloader()));
     }
 
     @Override

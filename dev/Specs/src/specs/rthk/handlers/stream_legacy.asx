@@ -1,0 +1,33 @@
+﻿<asx version = "3.0"> 
+	<title>radio1 ¦Û¥Ñ­·¦Û¥Ñ PHONE </title>
+	<abstract></abstract> 
+	<copyright>Radio Television Hong Kong</copyright> 
+	<author>rthk.hk</author> 
+	<entry> 
+	  <title>radio1 ¦Û¥Ñ­·¦Û¥Ñ PHONE </title>
+	  <abstract></abstract> 
+	  <copyright>Radio Television Hong Kong</copyright> 
+	  <author>rthk.hk</author> 
+ 	  <STARTTIME VALUE="00:04:00" /> 
+	  <DURATION VALUE="00:55:58" /> 
+	  <ref href = "mms://202.177.192.111/rthk/radio1/20130101/2013010117.asf"/> 
+	</entry>
+	<entry> 
+	  <title>radio1 ¦Û¥Ñ­·¦Û¥Ñ PHONE </title>
+	  <abstract></abstract> 
+	  <copyright>Radio Television Hong Kong</copyright> 
+	  <author>rthk.hk</author> 
+ 	  <STARTTIME VALUE="00:20:00" /> 
+	  <DURATION VALUE="00:39:58" /> 
+	  <ref href = "mms://202.177.192.111/rthk/radio1/20130101/2013010118.asf"/> 
+	</entry>
+	<entry> 
+	  <title>radio1 ¦Û¥Ñ­·¦Û¥Ñ PHONE </title>
+	  <abstract></abstract> 
+	  <copyright>Radio Television Hong Kong</copyright> 
+	  <author>rthk.hk</author> 
+ 	  <STARTTIME VALUE="00:04:00" /> 
+	  <DURATION VALUE="00:55:58" /> 
+	  <ref href = "mms://202.177.192.111/rthk/radio1/20130101/2013010119.asf"/> 
+	</entry>
+</asx>

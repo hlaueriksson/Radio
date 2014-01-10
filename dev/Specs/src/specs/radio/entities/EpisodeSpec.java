@@ -4,9 +4,7 @@ import com.hoffenkloffen.radio.entities.Episode;
 import org.junit.Test;
 import specs.BaseSpec;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class EpisodeSpec extends BaseSpec {

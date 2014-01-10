@@ -16,8 +16,8 @@ public class ProgramSpec extends BaseSpec {
 
     protected void given() {
         program = new Program();
-        program.setUrl("http://programme.rthk.hk/channel/radio/programme.php?name=radio1/legco_2012_forum_gc&p=5611");
-        program.setName("2012 立法會選舉論壇 - 地區選舉");
+        program.setUrl("http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_london_olympics_opening&p=5590");
+        program.setName("2012倫敦奧運開幕禮 (與普通話台、數碼31台聯播)");
         program.setStation("radio1");
     }
 
@@ -43,7 +43,7 @@ public class ProgramSpec extends BaseSpec {
         String json = SpecSupport.readFile("\\RTHK\\res\\raw\\programs.json");
         List<Program> result = Program.deserializeList(json);
 
-        assertThat(result.size(), is(equalTo(544)));
+        assertThat(result.size(), is(equalTo(518)));
 
         assertThat(result.get(0).getUrl(), is(equalTo(program.getUrl())));
         assertThat(result.get(0).getName(), is(equalTo(program.getName())));

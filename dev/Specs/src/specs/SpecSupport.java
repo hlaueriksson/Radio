@@ -17,7 +17,7 @@ public class SpecSupport {
 
     public static String readFile(String path) throws IOException {
 
-        return new Scanner( getFile(path), "UTF-8" ).useDelimiter("\\A").next();
+        return new Scanner(getFile(path), "UTF-8").useDelimiter("\\A").next();
     }
 
     public static InputStream getInputStream(String path) throws IOException {

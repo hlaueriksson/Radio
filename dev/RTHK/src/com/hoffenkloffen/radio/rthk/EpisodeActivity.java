@@ -4,12 +4,11 @@ import com.hoffenkloffen.radio.BaseEpisodeActivity;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StreamHandler;
 import com.hoffenkloffen.radio.utils.Downloader;
-import com.hoffenkloffen.radio.utils.LogFacade;
 
 public class EpisodeActivity extends BaseEpisodeActivity {
 
     @Override
     protected RadioHandler getRadioHandler() {
-        return new RadioHandler(null, null, null, new StreamHandler(new LogFacade(), new Downloader()));
+        return new RadioHandler(null, null, null, new StreamHandler(new Downloader()));
     }
 }

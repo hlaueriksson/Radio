@@ -2,7 +2,7 @@ package com.hoffenkloffen.radio.player;
 
 import com.hoffenkloffen.radio.utils.ILogFacade;
 
-public class MediaPlayerManager {
+public class MediaPlayerManager { // TODO do we need this?
 
     private static final String TAG = MediaPlayerManager.class.getSimpleName();
 

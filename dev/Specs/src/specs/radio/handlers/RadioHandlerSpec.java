@@ -62,7 +62,7 @@ public class RadioHandlerSpec extends BaseSpec {
 
     @Test
     public void should_return_stream() {
-        Mockito.when(streamHandler.getStream(null)).thenReturn(new Stream());
+        Mockito.when(streamHandler.getStream(null)).thenReturn(new Stream(""));
 
         Stream result = handler.getStream(null);
 

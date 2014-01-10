@@ -7,13 +7,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Webtrend Meta Tag -->
 <meta name="WT.cg_n" content="prog_page:radio2/siksifung" />
-<meta name="WT.cg_s" content="2013-08-25" />
+<meta name="WT.cg_s" content="2014-01-05" />
 <!-- Webtrend Meta Tag -->
-<meta name="title" content="rthk.hk 香港電台網站: 【 sik 】【 si 】【 fung 】:為了夢想…    " />
-<meta name="description" content="主持：胡世傑、黃明樂、陳嘉銘" />
+<meta name="title" content="rthk.hk 香港電台網站: 【 sik 】【 si 】【 fung 】:左膠右膠  幫倒忙?   " />
+<meta name="description" content="主持：胡世傑、陳嘉銘、黃明樂      " />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
-
-<title>rthk.hk 香港電台網站: 【 sik 】【 si 】【 fung 】:為了夢想…    </title>
+<meta property="og:type" content="movie" /> 
+<meta property="og:video:height" content="25" /> 
+<meta property="og:video:width" content="420" /> 
+<meta property="og:video:type" content="application/x-shockwave-flash" />
+<meta property="og:title" content="【 sik 】【 si 】【 fung 】-左膠右膠  幫倒忙?   " /> 
+<meta property="og:description" content="一字多音，一音多義，正是廣東字音特色，【 sik 】【 si 】【 fung 】這三個廣東音，所代表的中文字組合可謂多不勝數。作為第二台個人意見平台，本節目除秉承一貫宗旨，捍衛多元聲音和意見，達致互動交流之外，更要打破常規和框架，用輕鬆角度和手法，將生活、社會層面上的可能與不可能，共冶一爐。" />
+<meta property="og:image" content="http://programme.rthk.hk/homepics/images/radio2_logo.gif" />
+<meta property="og:video" content="https://rthkcms3.rthk.hk/jwplayer/player.swf?streamer=rtmp%3A%2F%2Fstmw.rthk.hk%2Faod%2F_definst_&file=radio%2Farchive%2Fradio2%2Fsiksifung%2Fmp3%2F20140105.mp3&autostart=true" /><title>rthk.hk 香港電台網站: 【 sik 】【 si 】【 fung 】:左膠右膠  幫倒忙?   </title>
 <link href="http://rthk.hk/include2010/css/base.css" rel="stylesheet" type="text/css" />
 <link href="http://rthk.hk/include2010/css/programme.css" rel="stylesheet" type="text/css" />
 <link href="http://rthk.hk/include2010/css/programme_theme2.css" rel="stylesheet" type="text/css" />
@@ -219,15 +225,14 @@ src="http://sdc.rthk.hk/dcseht10h000004r7f320gnyr_5q2e/njs.gif?dcsuri=/nojavascr
 			<div id="channel-live">
 				<ul>
 				<li id="live-title">網上直播</li>
-				<li id="listen-media"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=media&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_media.gif" alt="收聽 Window Media" title="收聽 Window Media" /></a></li>
-				<li id="listen-real"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=real&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_real.gif" alt="收聽 Real" title="收聽 Real" /></a></li>
+				<li id="listen-media"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=mp3&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_mp3.gif" alt="收聽 MP3" title="收聽 MP3" /></a></li>
 				<li id="listen-hq"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=hq&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_hq.gif" alt="收聽高質版 High Quality Version" title="收聽高質版 High Quality Version" /></a></li>
-				<li id="live-programme"><a href="programme.php?name=RightableWrong&d=2013-09-05&p=4280&e=&m=episode">有冇搞錯</a></li>
+				<li id="live-programme"><a href="programme.php?name=2012_callmegaga&d=2014-01-10&p=5619&e=&m=episode">Call me Gaga</a></li>
 				</ul>
 			</div>
-			<div id="channel-btn"><a href="javascript:bookmarksite('RTHK.HK 香港電台網站','http://programme.rthk.hk/channel/radio/programme.php?name=radio2/siksifung&d=2013-08-25&p=4561&e=229871&m=episode');">加入到書籤 Add to bookmark</a></div>
+			<div id="channel-btn"><a href="javascript:bookmarksite('RTHK.HK 香港電台網站','http://programme.rthk.hk/channel/radio/programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode');">加入到書籤 Add to bookmark</a></div>
 		</div>
-		<!-- nav -->
+			<!-- nav -->
 				<div id="nav" class="archive">
 			<ul id="channelnav">
 
@@ -340,30 +345,59 @@ function addToFavorites() {
 			</div>
 								<div id="prog-playbar">
 					<ul>
-   
-                
-					<li>收聽<BR />Listen</li>
-										<li><a href="javascript:MM_openPalyerWindow('player_popup.php?pid=4561&eid=229871&d=2013-08-25&player=media&type=archive&channel=radio2','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');" class="media">Window Media</a></li>
-															<li><a href="javascript:MM_openPalyerWindow('player_popup.php?pid=4561&eid=229871&d=2013-08-25&player=real&type=archive&channel=radio2','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');" class="real">Real Media</a></li>
-										    
-						<li>獨立播放<br />Standalone Player</li>
-											<li><a href="http://www.rthk.org.hk/asx/rthk/radio2/siksifung/20130825.asx" onclick="dcsMultiTrack('DCS.dcsuri', 'http://www.rthk.org.hk/asx/rthk/radio2/siksifung/20130825.asx', 'WT.ti', '【 sik 】【 si 】【 fung 】','WT.cg_n','player_archive:radio2/siksifung' 'WT.cg_s','2013-08-25')" target="_blank">Media</a><br /><a href="http://www.rthk.org.hk/smi/rthk/radio2/siksifung/20130825.smi"  onclick="dcsMultiTrack('DCS.dcsuri', 'http://www.rthk.org.hk/smi/rthk/radio2/siksifung/20130825.smi', 'WT.ti', '【 sik 】【 si 】【 fung 】','WT.cg_n','player_archive:radio2/siksifung' 'WT.cg_s','2013-08-25')" target="_blank">Real</a></li>					                                                             
+			<li>收聽<BR />Listen</li>
+			<li><a href="javascript:MM_openPalyerWindow('player_popup.php?pid=4561&eid=246081&d=2014-01-05&player=mp3&type=archive&channel=radio2','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');" class="mp3">Window Media</a></li>
 
 					</ul>
 					<div class="clear-both"></div>
 				</div>
 
 
-							<div id="prog-content">
-                
+							<div id="prog-content">                
 				<div id="epi-list">
 					<div class="jumpmenu">
 						<form>
 						<select name="epiSelect" id="epiSelect" onmousedown="this.style.width='auto'" onblur="this.style.width='100%'" onChange="MM_jumpMenu('parent',this,0)">
 						<option value="">選擇集數</option>
+												<option value="programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode" SELECTED="selected">2014-01-05 左膠右膠  幫倒忙?    </option>
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-12-29&p=4561&e=245170&m=episode">2013-12-29 別了梅艷芳十年   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-12-22&p=4561&e=244489&m=episode">2013-12-22 青年人性知識   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-12-15&p=4561&e=243624&m=episode">2013-12-15 解讀路姆西公仔 </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-12-08&p=4561&e=242742&m=episode">2013-12-08 籌款要靠電視show?   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-12-01&p=4561&e=241869&m=episode">2013-12-01 facebook 你like唔like?   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-11-24&p=4561&e=240977&m=episode">2013-11-24 TVB惡鬥壹傳媒 </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-11-17&p=4561&e=240193&m=episode">2013-11-17 熄機為乜?</option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-11-10&p=4561&e=239348&m=episode">2013-11-10 講一套做一套   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-11-03&p=4561&e=238519&m=episode">2013-11-03 香港   我不想留低?   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-10-27&p=4561&e=237655&m=episode">2013-10-27 藝人表態  唔係咁易?   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-10-20&p=4561&e=236611&m=episode">2013-10-20 電視起風雲</option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-10-13&p=4561&e=235838&m=episode">2013-10-13 老闆唔易做得好?   </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-10-06&p=4561&e=235017&m=episode">2013-10-06 起跑綫set在幼稚園</option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-09-29&p=4561&e=234176&m=episode">2013-09-29 婚姻關係      </option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-09-22&p=4561&e=234175&m=episode">2013-09-22 語言風暴</option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-09-15&p=4561&e=232576&m=episode">2013-09-15 愛惜郊野公園</option> 
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-09-08&p=4561&e=231813&m=episode">2013-09-08 家長也開學   </option> 
 						
 						<option value="programme.php?name=radio2/siksifung&d=2013-09-01&p=4561&e=230911&m=episode">2013-09-01 廉航有幾吸引</option> 
-												<option value="programme.php?name=radio2/siksifung&d=2013-08-25&p=4561&e=229871&m=episode" SELECTED="selected">2013-08-25 為了夢想…     </option>
+						
+						<option value="programme.php?name=radio2/siksifung&d=2013-08-25&p=4561&e=229871&m=episode">2013-08-25 為了夢想…    </option> 
 						
 						<option value="programme.php?name=radio2/siksifung&d=2013-08-18&p=4561&e=229085&m=episode">2013-08-18 誰撕裂香港  </option> 
 						
@@ -430,42 +464,6 @@ function addToFavorites() {
 						<option value="programme.php?name=radio2/siksifung&d=2013-01-13&p=4561&e=204035&m=episode">2013-01-13 王家衛style  </option> 
 						
 						<option value="programme.php?name=radio2/siksifung&d=2013-01-06&p=4561&e=203279&m=episode">2013-01-06 唐唐發圍？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-12-30&p=4561&e=202491&m=episode">2012-12-30 讀名校  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-12-23&p=4561&e=201853&m=episode">2012-12-23 食咩嘢落個肚？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-12-16&p=4561&e=201134&m=episode">2012-12-16 世界末日真定假？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-12-09&p=4561&e=200411&m=episode">2012-12-09 你份工作有咩要焦慮  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-12-02&p=4561&e=199566&m=episode">2012-12-02 CY個說法太浪漫？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-11-25&p=4561&e=198765&m=episode">2012-11-25 貓狗情  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-11-18&p=4561&e=198764&m=episode">2012-11-18 大台細台　show一樣爛  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-11-11&p=4561&e=197166&m=episode">2012-11-11 人情講心定講金？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-11-04&p=4561&e=196416&m=episode">2012-11-04 青年人有幾搏？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-10-28&p=4561&e=195732&m=episode">2012-10-28 退休規劃  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-10-21&p=4561&e=195045&m=episode">2012-10-21 你眼中的黃毓民  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-10-14&p=4561&e=194265&m=episode">2012-10-14 你老嗎？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-10-07&p=4561&e=193547&m=episode">2012-10-07 全城哀悼  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-09-30&p=4561&e=192813&m=episode">2012-09-30 自僱有幾棧？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-09-23&p=4561&e=192044&m=episode">2012-09-23 六合夢  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-09-16&p=4561&e=192043&m=episode">2012-09-16 置業難難難  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-09-09&p=4561&e=190633&m=episode">2012-09-09 國教科　撤左未？  </option> 
-						
-						<option value="programme.php?name=radio2/siksifung&d=2012-09-02&p=4561&e=189806&m=episode">2012-09-02 一人一票  </option> 
 												</select>
 						</form>
 					</div>
@@ -473,17 +471,327 @@ function addToFavorites() {
 								<div id="epi-text">
 					<div id="epi-top" style="display:none;">
 						<div class="titlebar">
-														<span class="title">為了夢想…     </span><br />
-														<span class="time">2013-08-25 HKT 12:00</span>
+														<span class="title">左膠右膠  幫倒忙?    </span><br />
+														<span class="time">2014-01-05 HKT 12:00</span>
 						</div>
 
 						<div class="clear-both"></div>
 					</div>
 										<div class="title">
-                    為了夢想…                        </div>
-                    					<div style="margin-bottom:0cm;margin-bottom:.0001pt;text-autospace:none;vertical-align:
-baseline"><span style="
-color:blue">主持：胡世傑、黃明樂、陳嘉銘</span></div>					<BR /><BR />
+                    左膠右膠  幫倒忙?                       </div>
+                    					<span style="font-family:">主持：胡世傑、陳嘉銘、黃明樂</span>      <!--[if gte mso 9]><xml>
+<w:WordDocument>
+<w:View>Normal</w:View>
+<w:Zoom>0</w:Zoom>
+<w:TrackMoves />
+<w:TrackFormatting />
+<w:PunctuationKerning />
+<w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+<w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+<w:ValidateAgainstSchemas />
+<w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+<w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+<w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+<w:DoNotPromoteQF />
+<w:LidThemeOther>EN-US</w:LidThemeOther>
+<w:LidThemeAsian>ZH-TW</w:LidThemeAsian>
+<w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+<w:Compatibility>
+<w:SpaceForUL />
+<w:BalanceSingleByteDoubleByteWidth />
+<w:DoNotLeaveBackslashAlone />
+<w:ULTrailSpace />
+<w:DoNotExpandShiftReturn />
+<w:AdjustLineHeightInTable />
+<w:BreakWrappedTables />
+<w:SnapToGridInCell />
+<w:WrapTextWithPunct />
+<w:UseAsianBreakRules />
+<w:DontGrowAutofit />
+<w:SplitPgBreakAndParaMark />
+<w:EnableOpenTypeKerning />
+<w:DontFlipMirrorIndents />
+<w:OverrideTableStyleHps />
+<w:UseFELayout />
+</w:Compatibility>
+<w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+<m:mathPr>
+<m:mathFont m:val="Cambria Math" />
+<m:brkBin m:val="before" />
+<m:brkBinSub m:val="--" />
+<m:smallFrac m:val="off" />
+<m:dispDef />
+<m:lMargin m:val="0" />
+<m:rMargin m:val="0" />
+<m:defJc m:val="centerGroup" />
+<m:wrapIndent m:val="1440" />
+<m:intLim m:val="subSup" />
+<m:naryLim m:val="undOvr" />
+</m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+LatentStyleCount="267">
+<w:LsdException Locked="false" Priority="0" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+<w:LsdException Locked="false" Priority="9" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+<w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+<w:LsdException Locked="false" Priority="39" Name="toc 1" />
+<w:LsdException Locked="false" Priority="39" Name="toc 2" />
+<w:LsdException Locked="false" Priority="39" Name="toc 3" />
+<w:LsdException Locked="false" Priority="39" Name="toc 4" />
+<w:LsdException Locked="false" Priority="39" Name="toc 5" />
+<w:LsdException Locked="false" Priority="39" Name="toc 6" />
+<w:LsdException Locked="false" Priority="39" Name="toc 7" />
+<w:LsdException Locked="false" Priority="39" Name="toc 8" />
+<w:LsdException Locked="false" Priority="39" Name="toc 9" />
+<w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+<w:LsdException Locked="false" Priority="10" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Title" />
+<w:LsdException Locked="false" Priority="0" Name="Default Paragraph Font" />
+<w:LsdException Locked="false" Priority="11" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+<w:LsdException Locked="false" Priority="22" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+<w:LsdException Locked="false" Priority="20" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+<w:LsdException Locked="false" Priority="0" Name="Normal (Web)" />
+<w:LsdException Locked="false" Priority="59" SemiHidden="false"
+UnhideWhenUsed="false" Name="Table Grid" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+<w:LsdException Locked="false" Priority="1" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 1" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+<w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+<w:LsdException Locked="false" Priority="34" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+<w:LsdException Locked="false" Priority="29" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+<w:LsdException Locked="false" Priority="30" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 1" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 2" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 2" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 3" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 3" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 4" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 4" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 5" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 5" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+<w:LsdException Locked="false" Priority="60" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+<w:LsdException Locked="false" Priority="61" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light List Accent 6" />
+<w:LsdException Locked="false" Priority="62" SemiHidden="false"
+UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+<w:LsdException Locked="false" Priority="63" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+<w:LsdException Locked="false" Priority="64" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+<w:LsdException Locked="false" Priority="65" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+<w:LsdException Locked="false" Priority="66" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+<w:LsdException Locked="false" Priority="67" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+<w:LsdException Locked="false" Priority="68" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+<w:LsdException Locked="false" Priority="69" SemiHidden="false"
+UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+<w:LsdException Locked="false" Priority="70" SemiHidden="false"
+UnhideWhenUsed="false" Name="Dark List Accent 6" />
+<w:LsdException Locked="false" Priority="71" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+<w:LsdException Locked="false" Priority="72" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+<w:LsdException Locked="false" Priority="73" SemiHidden="false"
+UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+<w:LsdException Locked="false" Priority="19" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+<w:LsdException Locked="false" Priority="21" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+<w:LsdException Locked="false" Priority="31" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+<w:LsdException Locked="false" Priority="32" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+<w:LsdException Locked="false" Priority="33" SemiHidden="false"
+UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+<w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+<w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+</w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+/* Style Definitions */
+table.MsoNormalTable
+
+</style>
+<![endif]-->					<BR /><BR />
 					<BR><BR><div class="tags">Tag:  <a href="index.php?c=radio2&m=archive&type=epi&tag=%E8%83%A1%E4%B8%96%E5%82%91%E3%80%81%E9%BB%83%E6%98%8E%E6%A8%82%E3%80%81%E9%99%B3%E5%98%89%E9%8A%98">胡世傑、黃明樂、陳嘉銘</a></div>
 
 				</div>
@@ -614,10 +922,10 @@ color:blue">主持：胡世傑、黃明樂、陳嘉銘</span></div>					<BR /><B
     <div id="gf-links">
 		<a href="http://rthk.hk/about/" class="first">關於香港電台</a>
 		<a href="http://rthk.hk/press/chi/">新聞稿</a>
-		<a href="http://rthk.hk/downloads/">下載區</a>
+		<!--<a href="http://rthk.hk/downloads/">下載區</a>//-->
 		<a href="http://rthk.hk/recruit/">招聘</a>
 		<a href="http://rthk.hk/tender/">招標</a>
-		<a href="http://rthk.hk/copyright/">版權公告</a>
+		<a href="http://rthk.hk/copyright/">知識產權告示</a>
 		<a href="http://rthk.hk/faq/">常見問題</a>
 		<a href="http://rthk.hk/privacy/">私隱政策</a>
         <a href="http://rthk.hk/w3caa/">無障礙網頁</a>
@@ -651,9 +959,9 @@ color:blue">主持：胡世傑、黃明樂、陳嘉銘</span></div>					<BR /><B
 --> 
     </div>
     <!--/gf-banners-->
-    <div id="gf-copyright">&copy; 2013 rthk.hk </div>
+    <div id="gf-copyright" style="margin-bottom:10px;">&copy; 2014 rthk.hk </div>
     <!--/gf-copyright-->
-    <div id="gf-requirement">請使用 : 1024 x 768 螢幕解析度、<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">Internet Explorer 6.0</a> 或以上的瀏覽器、<a href="http://www.adobe.com/products/flashplayer/" target="_blank">Flash Player 9.0</a> 或以上版本，瀏覽此網站有更佳的效果。</div>
+    <!--<div id="gf-requirement">請使用 : 1024 x 768 螢幕解析度、<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">Internet Explorer 6.0</a> 或以上的瀏覽器、<a href="http://www.adobe.com/products/flashplayer/" target="_blank">Flash Player 9.0</a> 或以上版本，瀏覽此網站有更佳的效果。</div>//-->
     <!--/gf-requirement-->
     <div class="clear"></div>
   </div>
