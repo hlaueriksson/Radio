@@ -204,7 +204,7 @@ src="http://sdc.rthk.hk/dcseht10h000004r7f320gnyr_5q2e/njs.gif?dcsuri=/nojavascr
         <div class="ch-radio">		  
         </div><!--/.ch-radio-->
    	    <div class="ch-tv">
-          <div class="padding"><img src="http://rthk.hk/include2010/homepics/images/head_tv_timetable_live.gif" alt="今日網上電視播放時間表" width="188" height="18" /></div>
+          <!--div class="padding"><img src="http://rthk.hk/include2010/homepics/images/head_tv_timetable_live.gif" alt="今日網上電視播放時間表" width="188" height="18" /></div-->
    	      <div id="tbl-tv-proglist">		  
 		  </div><!--/tbl-tv-proglist-->
 		  
@@ -227,7 +227,7 @@ src="http://sdc.rthk.hk/dcseht10h000004r7f320gnyr_5q2e/njs.gif?dcsuri=/nojavascr
 				<li id="live-title">網上直播</li>
 				<li id="listen-media"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=mp3&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_mp3.gif" alt="收聽 MP3" title="收聽 MP3" /></a></li>
 				<li id="listen-hq"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=hq&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_hq.gif" alt="收聽高質版 High Quality Version" title="收聽高質版 High Quality Version" /></a></li>
-				<li id="live-programme"><a href="programme.php?name=2012_callmegaga&d=2014-01-10&p=5619&e=&m=episode">Call me Gaga</a></li>
+				<li id="live-programme"><a href="programme.php?name=lovepets&d=2014-01-13&p=5854&e=&m=episode">家有愛寵</a></li>
 				</ul>
 			</div>
 			<div id="channel-btn"><a href="javascript:bookmarksite('RTHK.HK 香港電台網站','http://programme.rthk.hk/channel/radio/programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode');">加入到書籤 Add to bookmark</a></div>
@@ -346,7 +346,7 @@ function addToFavorites() {
 								<div id="prog-playbar">
 					<ul>
 			<li>收聽<BR />Listen</li>
-			<li><a href="javascript:MM_openPalyerWindow('player_popup.php?pid=4561&eid=246081&d=2014-01-05&player=mp3&type=archive&channel=radio2','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');" class="mp3">Window Media</a></li>
+			<li><a href="http://stmw.rthk.hk/aod/_definst_/radio/archive/radio2/siksifung/mp3/mp3:20140105.mp3/playlist.m3u8" class="mp3">MP3</a></li>
 
 					</ul>
 					<div class="clear-both"></div>
@@ -359,6 +359,8 @@ function addToFavorites() {
 						<form>
 						<select name="epiSelect" id="epiSelect" onmousedown="this.style.width='auto'" onblur="this.style.width='100%'" onChange="MM_jumpMenu('parent',this,0)">
 						<option value="">選擇集數</option>
+						
+						<option value="programme.php?name=radio2/siksifung&d=2014-01-12&p=4561&e=247161&m=episode">2014-01-12 明報變暗?   </option> 
 												<option value="programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode" SELECTED="selected">2014-01-05 左膠右膠  幫倒忙?    </option>
 						
 						<option value="programme.php?name=radio2/siksifung&d=2013-12-29&p=4561&e=245170&m=episode">2013-12-29 別了梅艷芳十年   </option> 

@@ -4,7 +4,7 @@ public class Stream {
 
     public enum Protocol {
         NONE,
-        RTMP,
+        HLS,
         MMS
     }
 
@@ -19,7 +19,7 @@ public class Stream {
     }
 
     public Protocol getProtocol() {
-        if (url.startsWith("rtmp://")) return Protocol.RTMP;
+        if (url.startsWith("http://") && url.endsWith(".m3u8")) return Protocol.HLS;
         if (url.startsWith("mms://")) return Protocol.MMS;
 
         return Protocol.NONE;

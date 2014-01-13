@@ -23,17 +23,53 @@ public class SmmStreamStrategySpec extends BaseSpec {
     }
 
     @Test
-    public void should_handle_legacy_stream() throws Exception {
-        String path = "\\Specs\\src\\specs\\rthk\\handlers\\episode_legacy.php";
+    public void should_handle_old_stream() throws Exception {
+        String path = "\\Specs\\src\\specs\\rthk\\handlers\\episode_old.php";
         String content = SpecSupport.readFile(path);
 
-        path = "\\Specs\\src\\specs\\rthk\\handlers\\stream_legacy.asx";
+        path = "\\Specs\\src\\specs\\rthk\\handlers\\stream.asx";
         String response = SpecSupport.readFile(path);
-        Mockito.when(downloader.getResponse("http://www.rthk.org.hk/asx/rthk/radio1/openline_openview/20130101.asx")).thenReturn(response);
+        Mockito.when(downloader.getResponse("http://www.rthk.org.hk/asx/rthk/radio2/siksifung/20131229.asx")).thenReturn(response);
 
         Stream result = strategy.getStream(content);
 
         assertThat(result, is(notNullValue()));
         assertThat(result.getUrl(), is(equalTo("mms://202.177.192.111/rthk/radio1/20130101/2013010117.asf")));
+    }
+
+    @Test
+    public void should_not_handle_new_stream() throws Exception {
+        String path = "\\Specs\\src\\specs\\rthk\\handlers\\episode_new.php";
+        String content = SpecSupport.readFile(path);
+
+        Stream result = strategy.getStream(content);
+
+        assertThat(result, is(nullValue()));
+    }
+
+    @Test
+    public void should_not_handle_missing_old_stream() throws Exception {
+        String path = "\\Specs\\src\\specs\\rthk\\handlers\\episode_old.php";
+        String content = SpecSupport.readFile(path);
+
+        Mockito.when(downloader.getResponse("http://www.rthk.org.hk/asx/rthk/radio2/siksifung/20131229.asx")).thenReturn(null);
+
+        Stream result = strategy.getStream(content);
+
+        assertThat(result, is(nullValue()));
+    }
+
+    @Test
+    public void should_not_handle_invalid_old_stream() throws Exception {
+        String path = "\\Specs\\src\\specs\\rthk\\handlers\\episode_old.php";
+        String content = SpecSupport.readFile(path);
+
+        path = "\\Specs\\src\\specs\\rthk\\handlers\\stream_invalid.asx";
+        String response = SpecSupport.readFile(path);
+        Mockito.when(downloader.getResponse("http://www.rthk.org.hk/asx/rthk/radio2/siksifung/20131229.asx")).thenReturn(response);
+
+        Stream result = strategy.getStream(content);
+
+        assertThat(result, is(nullValue()));
     }
 }

@@ -6,7 +6,7 @@ import com.hoffenkloffen.radio.utils.IDownloader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SmmStreamStrategy implements IStreamStrategy { // TODO: test error handling
+public class SmmStreamStrategy implements IStreamStrategy {
 
     private IDownloader downloader;
 
@@ -17,8 +17,16 @@ public class SmmStreamStrategy implements IStreamStrategy { // TODO: test error 
     @Override
     public Stream getStream(String content) {
         String fileUrl = getFileUrl(content);
+
+        if (fileUrl == null) return null;
+
         String response = downloader.getResponse(fileUrl);
+
+        if (response == null) return null;
+
         String url = getStreamUrl(response);
+
+        if (url == null) return null;
 
         return new Stream(url);
     }

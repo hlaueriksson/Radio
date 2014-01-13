@@ -17,13 +17,13 @@ public class StreamHandler implements IStreamHandler {
     public Stream getStream(Episode episode) {
         String response = downloader.getResponse(episode.getUrl());
 
-        IStreamStrategy parser = new RtmpStreamStrategy();
-        Stream result = parser.getStream(response);
+        IStreamStrategy strategy = new HlsStreamStrategy();
+        Stream result = strategy.getStream(response);
 
         if (result != null) return result;
 
-        parser = new SmmStreamStrategy(downloader);
-        result = parser.getStream(response);
+        strategy = new SmmStreamStrategy(downloader);
+        result = strategy.getStream(response);
 
         return result;
     }
