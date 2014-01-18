@@ -165,14 +165,19 @@
     "name": "行政長官立法會答問大會"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/ce_policy_forum_2014&p=6144",
+    "station": "radio1",
+    "name": "行政長官立法會答問大會"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_policy_address_hotline&p=5749",
     "station": "radio1",
     "name": "行政長官施政答問"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2012_ce_qanda&p=5702",
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2014_policy_address_hotline&p=6143",
     "station": "radio1",
-    "name": "行政長官答問大會"
+    "name": "行政長官施政答問"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_ce_qanda_02&p=5944",
@@ -265,7 +270,17 @@
     "name": "施政報告記者會"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2014_policy_address_presscon&p=6140",
+    "station": "radio1",
+    "name": "施政報告記者會"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_policy_address_news&p=5748",
+    "station": "radio1",
+    "name": "施政報告特輯"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2014_policy_address_news&p=6142",
     "station": "radio1",
     "name": "施政報告特輯"
   },
@@ -275,7 +290,17 @@
     "name": "施政報告電視論壇"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2014_policy_address_tvforum&p=6141",
+    "station": "radio1",
+    "name": "施政報告電視論壇"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2013_policy_address&p=5745",
+    "station": "radio1",
+    "name": "施政報告演辭"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio1/2014_policy_address&p=6139",
     "station": "radio1",
     "name": "施政報告演辭"
   },
@@ -650,6 +675,11 @@
     "name": "二台喜迎金蛇賀新歲"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/60minutes&p=6146",
+    "station": "radio2",
+    "name": "六十分鐘新視野"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/LassiesandNerds&p=4629",
     "station": "radio2",
     "name": "中女宅男殺很大"
@@ -785,6 +815,16 @@
     "name": "第32屆香港電影金像獎頒獎禮特輯"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/prelude36thgoldsong&p=6104",
+    "station": "radio2",
+    "name": "第三十六屆十大中文金曲前奏"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/36thgoldsongspecial&p=6107",
+    "station": "radio2",
+    "name": "第三十六屆十大中文金曲特輯"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2013_goldsongspecial&p=5757",
     "station": "radio2",
     "name": "第三十五屆十大中文金曲頒獎音樂會特輯"
@@ -808,6 +848,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/morningsuite&p=400",
     "station": "radio2",
     "name": "晨光第一線"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/musicreunion&p=6147",
+    "station": "radio2",
+    "name": "這裡找共鳴"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/curiouserandcuriouser&p=5855",
@@ -868,11 +913,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/Artscritique&p=3203",
     "station": "radio2",
     "name": "演藝風流"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/2012_artcritiquespecial&p=5687",
-    "station": "radio2",
-    "name": "演藝風流之香港週2012"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio2/gowest&p=3434",
@@ -1195,6 +1235,11 @@
     "name": "Operation Santa Claus 2012 Closing Ceremony"
   },
   {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/osc_2013_closing&p=6145",
+    "station": "radio3",
+    "name": "Operation Santa Claus 2013 Closing Ceremony"
+  },
+  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/opsanta13&p=6054",
     "station": "radio3",
     "name": "Operation Santa Claus 2013 Launch Ceremony"
@@ -1278,11 +1323,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/santas_last_stand_ep&p=6100",
     "station": "radio3",
     "name": "Santa's Last Stand - Extra Portions"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/santas_silver_auction&p=5705",
-    "station": "radio3",
-    "name": "Santa's Silver Auction Party"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio3/nepali&p=4212",
@@ -1745,11 +1785,6 @@
     "name": "Reflections 晚禱"
   },
   {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/rthk_quartet_euro_concerts&p=5704",
-    "station": "radio4",
-    "name": "RTHK Quartet European Concerts Special 香港電台弦樂四重奏歐洲音樂會特輯"
-  },
-  {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/songs_of_the_earth&p=5564",
     "station": "radio4",
     "name": "Songs of the Earth 大地之歌"
@@ -1838,11 +1873,6 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/ymm2012_final_concert&p=5738",
     "station": "radio4",
     "name": "YOUNG MUSIC MAKERS 2012 FINAL CONCERT 樂壇新秀2012閉幕音樂會"
-  },
-  {
-    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/youngmusicmakers2012&p=5665",
-    "station": "radio4",
-    "name": "Young Music Makers 2012 樂壇新秀 2012"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=radio4/piano_exam_2013_chin&p=5681",
@@ -2453,6 +2483,11 @@
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/9thGlobalChart&p=4658",
     "station": "pth",
     "name": "第九屆全球華語歌曲排行榜頒獎典禮"
+  },
+  {
+    "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/36thgoldsong&p=6083",
+    "station": "pth",
+    "name": "第三十六屆十大中文金曲頒獎音樂會【與合肥市廣播電視台（電台）聯播】"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/programme.php?name=pth/35thgoldsong&p=5771",
