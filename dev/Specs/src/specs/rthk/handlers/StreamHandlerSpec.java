@@ -55,6 +55,10 @@ public class StreamHandlerSpec extends BaseSpec {
         String response = SpecSupport.readFile(path);
         Mockito.when(downloader.getResponse(episode.getUrl())).thenReturn(response);
 
+        path = "\\Specs\\src\\specs\\rthk\\handlers\\popup.php";
+        response = SpecSupport.readFile(path);
+        Mockito.when(downloader.getResponse("http://programme.rthk.hk/channel/radio/player_popup.php?pid=4561&eid=246081&d=2014-01-05&player=mp3&type=archive&channel=radio2")).thenReturn(response);
+
         Stream result = handler.getStream(episode);
 
         assertThat(result.getProtocol(), is(Stream.Protocol.HLS));

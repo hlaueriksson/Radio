@@ -17,7 +17,7 @@ public class StreamHandler implements IStreamHandler {
     public Stream getStream(Episode episode) {
         String response = downloader.getResponse(episode.getUrl());
 
-        IStreamStrategy strategy = new HlsStreamStrategy();
+        IStreamStrategy strategy = new HlsStreamStrategy(downloader);
         Stream result = strategy.getStream(response);
 
         if (result != null) return result;

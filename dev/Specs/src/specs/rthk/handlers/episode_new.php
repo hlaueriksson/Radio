@@ -11,7 +11,6 @@
 <!-- Webtrend Meta Tag -->
 <meta name="title" content="rthk.hk 香港電台網站: 【 sik 】【 si 】【 fung 】:左膠右膠  幫倒忙?   " />
 <meta name="description" content="主持：胡世傑、陳嘉銘、黃明樂      " />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
 <meta property="og:type" content="movie" /> 
 <meta property="og:video:height" content="25" /> 
 <meta property="og:video:width" content="420" /> 
@@ -227,7 +226,7 @@ src="http://sdc.rthk.hk/dcseht10h000004r7f320gnyr_5q2e/njs.gif?dcsuri=/nojavascr
 				<li id="live-title">網上直播</li>
 				<li id="listen-media"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=mp3&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_mp3.gif" alt="收聽 MP3" title="收聽 MP3" /></a></li>
 				<li id="listen-hq"><a href="javascript:MM_openBrWindow('player_popup.php?rid=173&player=hq&type=live','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');"><img src="/homepics/images/live_btn_hq.gif" alt="收聽高質版 High Quality Version" title="收聽高質版 High Quality Version" /></a></li>
-				<li id="live-programme"><a href="programme.php?name=lovepets&d=2014-01-13&p=5854&e=&m=episode">家有愛寵</a></li>
+				<li id="live-programme"><a href="programme.php?name=keepuco&d=2014-01-20&p=407&e=&m=episode">輕談淺唱不夜天</a></li>
 				</ul>
 			</div>
 			<div id="channel-btn"><a href="javascript:bookmarksite('RTHK.HK 香港電台網站','http://programme.rthk.hk/channel/radio/programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode');">加入到書籤 Add to bookmark</a></div>
@@ -346,7 +345,7 @@ function addToFavorites() {
 								<div id="prog-playbar">
 					<ul>
 			<li>收聽<BR />Listen</li>
-			<li><a href="http://stmw.rthk.hk/aod/_definst_/radio/archive/radio2/siksifung/mp3/mp3:20140105.mp3/playlist.m3u8" class="mp3">MP3</a></li>
+			<li><a href="javascript:MM_openPalyerWindow('player_popup.php?pid=4561&eid=246081&d=2014-01-05&player=mp3&type=archive&channel=radio2','rthk_pop_player','scrollbars=no,resizable=no,width=660,height=400');" class="mp3">MP3</a></li>
 
 					</ul>
 					<div class="clear-both"></div>
@@ -359,6 +358,8 @@ function addToFavorites() {
 						<form>
 						<select name="epiSelect" id="epiSelect" onmousedown="this.style.width='auto'" onblur="this.style.width='100%'" onChange="MM_jumpMenu('parent',this,0)">
 						<option value="">選擇集數</option>
+						
+						<option value="programme.php?name=radio2/siksifung&d=2014-01-19&p=4561&e=248115&m=episode">2014-01-19 旅客迫爆香港?   </option> 
 						
 						<option value="programme.php?name=radio2/siksifung&d=2014-01-12&p=4561&e=247161&m=episode">2014-01-12 明報變暗?   </option> 
 												<option value="programme.php?name=radio2/siksifung&d=2014-01-05&p=4561&e=246081&m=episode" SELECTED="selected">2014-01-05 左膠右膠  幫倒忙?    </option>
