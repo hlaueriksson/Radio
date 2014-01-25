@@ -55,9 +55,16 @@ foreach(var program in programs) {
 
 public class Downloader {
 	public string GetContent(string url) {
-		var client = new WebClient { Encoding = System.Text.Encoding.UTF8 };
+		try {
+			var client = new WebClient { Encoding = System.Text.Encoding.UTF8 };
+			
+			return client.DownloadString(url);
+		}
+		catch(Exception e) {
+			Console.WriteLine("ERROR: " + e.Message);
+		}
 		
-		return client.DownloadString(url);
+		return string.Empty;
 	}
 }
 
