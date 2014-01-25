@@ -16,25 +16,33 @@ import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
 
+@EActivity
 public abstract class BaseProgramActivity extends Activity {
 
     private static final String TAG = BaseProgramActivity.class.getSimpleName();
 
     private RadioHandler radioHandler;
 
+    @ViewById
+    protected ListView listview;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.program);
 
         radioHandler = getRadioHandler();
+    }
 
+    @AfterViews
+    protected void initViews() {
         Program program = getProgram();
         List<Episode> episodes = radioHandler.getEpisodes(program);
 
-        ListView listview = (ListView) findViewById(R.id.listview);
         EpisodeAdapter adapter = new EpisodeAdapter(this, R.layout.program_list_item_episode, episodes);
         listview.setAdapter(adapter);
 
@@ -50,7 +58,7 @@ public abstract class BaseProgramActivity extends Activity {
 
     protected abstract RadioHandler getRadioHandler();
 
-    protected abstract Class<?> getEpisodeActivityClass();
+    protected abstract Intent getNextActivityIntent();
 
     private Program getProgram() {
         Bundle extras = getIntent().getExtras();
@@ -62,7 +70,7 @@ public abstract class BaseProgramActivity extends Activity {
     private void openEpisode(Episode episode) {
         Log.i(TAG, "openEpisode: " + episode.getUrl());
 
-        Intent intent = new Intent(getBaseContext(), getEpisodeActivityClass());
+        Intent intent = getNextActivityIntent();
         intent.putExtra(Constants.Episode, episode.serialize());
 
         startActivity(intent);

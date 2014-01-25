@@ -1,10 +1,13 @@
 package com.hoffenkloffen.radio.rthk;
 
+import android.content.Intent;
 import com.hoffenkloffen.radio.BaseProgramActivity;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.rthk.handlers.EpisodeHandler;
 import com.hoffenkloffen.radio.utils.Downloader;
+import org.androidannotations.annotations.EActivity;
 
+@EActivity(R.layout.program)
 public class ProgramActivity extends BaseProgramActivity {
 
     @Override
@@ -13,7 +16,7 @@ public class ProgramActivity extends BaseProgramActivity {
     }
 
     @Override
-    protected Class<?> getEpisodeActivityClass() {
-        return EpisodeActivity.class;
+    protected Intent getNextActivityIntent() {
+        return EpisodeActivity_.intent(getApplicationContext()).get();
     }
 }

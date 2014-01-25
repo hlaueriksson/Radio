@@ -16,27 +16,37 @@ import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Station;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
 import java.util.List;
 
+@EActivity
 public abstract class BaseMainActivity extends Activity {
 
     private static final String TAG = BaseMainActivity.class.getSimpleName();
 
     private RadioHandler radioHandler;
 
+    @ViewById
+    protected ListView listview;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
 
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
 
         radioHandler = getRadioHandler();
 
+        //startFromUri();
+    }
+
+    @AfterViews
+    protected void initViews() {
         List<Station> stations = radioHandler.getStations();
 
-        ListView listview = (ListView) findViewById(R.id.listview);
         StationAdapter adapter = new StationAdapter(this, R.layout.main_list_item_station, stations);
         listview.setAdapter(adapter);
 
@@ -48,18 +58,16 @@ public abstract class BaseMainActivity extends Activity {
                 openStation(station);
             }
         });
-
-        //startFromUri();
     }
 
     protected abstract RadioHandler getRadioHandler();
 
-    protected abstract Class<?> getStationActivityClass();
+    protected abstract Intent getNextActivityIntent();
 
     private void openStation(Station station) {
         Log.i(TAG, "openStation: " + station.getName());
 
-        Intent intent = new Intent(getBaseContext(), getStationActivityClass());
+        Intent intent = getNextActivityIntent();
         intent.putExtra(Constants.Station, station.serialize());
 
         startActivity(intent);

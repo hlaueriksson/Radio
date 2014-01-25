@@ -1,11 +1,14 @@
 package com.hoffenkloffen.radio.rthk;
 
+import android.content.Intent;
 import com.hoffenkloffen.radio.BaseMainActivity;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StationHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StreamHandler;
 import com.hoffenkloffen.radio.utils.Downloader;
+import org.androidannotations.annotations.EActivity;
 
+@EActivity(R.layout.main)
 public class MainActivity extends BaseMainActivity {
 
     @Override
@@ -18,7 +21,7 @@ public class MainActivity extends BaseMainActivity {
     }
 
     @Override
-    protected Class<?> getStationActivityClass() {
-        return StationActivity.class;
+    protected Intent getNextActivityIntent() {
+        return StationActivity_.intent(getApplicationContext()).get();
     }
 }

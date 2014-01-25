@@ -15,7 +15,10 @@ import com.hoffenkloffen.radio.player.MediaPlayerManager;
 import com.hoffenkloffen.radio.utils.ILogFacade;
 import com.hoffenkloffen.radio.utils.LogFacade;
 import io.vov.vitamio.MediaPlayer;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
 
+@EActivity
 public abstract class BaseEpisodeActivity extends Activity {
 
     private static final String TAG = BaseEpisodeActivity.class.getSimpleName();
@@ -24,19 +27,16 @@ public abstract class BaseEpisodeActivity extends Activity {
 
     private MediaPlayerManager manager;
 
-    private TextView text;
+    @ViewById
+    protected TextView text;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.episode);
 
         radioHandler = getRadioHandler();
 
         Episode episode = getEpisode();
         Stream stream = radioHandler.getStream(episode);
-
-        text = (TextView) findViewById(R.id.text);
-        text.setText("Here be some proper episode info");
 
         ILogFacade log = new LogFacade();
         MediaPlayer player = new MediaPlayer(this);
