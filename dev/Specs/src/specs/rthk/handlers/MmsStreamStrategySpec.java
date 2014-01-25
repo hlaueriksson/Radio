@@ -1,7 +1,7 @@
 package specs.rthk.handlers;
 
 import com.hoffenkloffen.radio.entities.Stream;
-import com.hoffenkloffen.radio.rthk.handlers.SmmStreamStrategy;
+import com.hoffenkloffen.radio.rthk.handlers.MmsStreamStrategy;
 import com.hoffenkloffen.radio.utils.IDownloader;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -11,15 +11,15 @@ import specs.SpecSupport;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class SmmStreamStrategySpec extends BaseSpec {
-    protected SmmStreamStrategy strategy;
+public class MmsStreamStrategySpec extends BaseSpec {
+    protected MmsStreamStrategy strategy;
 
     private IDownloader downloader;
 
     protected void given() {
         downloader = Mockito.mock(IDownloader.class);
 
-        strategy = new SmmStreamStrategy(downloader);
+        strategy = new MmsStreamStrategy(downloader);
     }
 
     @Test

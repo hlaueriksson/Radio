@@ -22,7 +22,7 @@ public class StreamHandler implements IStreamHandler {
 
         if (result != null) return result;
 
-        strategy = new SmmStreamStrategy(downloader);
+        strategy = new MmsStreamStrategy(downloader);
         result = strategy.getStream(response);
 
         return result;

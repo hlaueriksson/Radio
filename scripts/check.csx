@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 var downloader = new Downloader();
 var hls = new Hls();
-var smm = new Smm();
+var mms = new Mms();
 
 var json = File.ReadAllText("output/programs.json");
 var programs = JArray.Parse(json);
@@ -41,9 +41,9 @@ foreach(var program in programs) {
 			supported = true;
 		}
 		
-		stream = smm.GetStream(html);
+		stream = mms.GetStream(html);
 		if(stream != null) {
-			Console.WriteLine("\t\tSMM: " + stream);
+			Console.WriteLine("\t\tMMS: " + stream);
 			supported = true;
 		}
 		
@@ -77,7 +77,7 @@ public class Hls {
 	}
 }
 
-public class Smm {
+public class Mms {
 	public string GetStream(string html) {
 		var pattern = "href=\"(http://www.rthk.org.hk/asx/rthk/.*?asx)\"";
 		var match = Regex.Matches(html, pattern).Cast<Match>().SingleOrDefault();

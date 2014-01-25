@@ -6,11 +6,11 @@ import com.hoffenkloffen.radio.utils.IDownloader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SmmStreamStrategy implements IStreamStrategy {
+public class MmsStreamStrategy implements IStreamStrategy {
 
     private IDownloader downloader;
 
-    public SmmStreamStrategy(IDownloader downloader) {
+    public MmsStreamStrategy(IDownloader downloader) {
         this.downloader = downloader;
     }
 
