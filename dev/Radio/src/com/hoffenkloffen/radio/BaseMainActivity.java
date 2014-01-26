@@ -1,36 +1,31 @@
 package com.hoffenkloffen.radio;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
+import com.hoffenkloffen.radio.entities.Resource;
 import com.hoffenkloffen.radio.entities.Station;
+import com.hoffenkloffen.radio.fragments.ResourceListFragment;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
-import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
+import org.androidannotations.annotations.FragmentById;
 
 import java.util.List;
 
+import static com.hoffenkloffen.radio.fragments.ResourceListFragment.ResourceListEventHandler;
+
 @EActivity
-public abstract class BaseMainActivity extends Activity {
+public abstract class BaseMainActivity extends Activity implements ResourceListEventHandler {
 
     private static final String TAG = BaseMainActivity.class.getSimpleName();
 
     private RadioHandler radioHandler;
 
-    @ViewById
-    protected ListView listview;
+    @FragmentById
+    protected ResourceListFragment resourceListFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,22 +38,15 @@ public abstract class BaseMainActivity extends Activity {
         //startFromUri();
     }
 
-    @AfterViews
-    protected void initViews() {
-        List<Station> stations = radioHandler.getStations();
-
-        StationAdapter adapter = new StationAdapter(this, R.layout.main_list_item_station, stations);
-        listview.setAdapter(adapter);
-
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
-                Station station = (Station) parent.getItemAtPosition(position);
-
-                openStation(station);
-            }
-        });
+    //region ResourceListEventHandler
+    public List<? extends Resource> getResourceList() {
+        return radioHandler.getStations();
     }
+
+    public void onResourceSelected(Resource resource) {
+        openStation((Station) resource);
+    }
+    //endregion
 
     protected abstract RadioHandler getRadioHandler();
 
@@ -102,31 +90,5 @@ public abstract class BaseMainActivity extends Activity {
         String action = getIntent().getAction();
 
         return Intent.ACTION_VIEW.equals(action);
-    }
-
-    private class StationAdapter extends ArrayAdapter<Station> {
-
-        public StationAdapter(Context context, int resource, List<Station> objects) {
-            super(context, resource, objects);
-        }
-
-        public View getView(int position, View convertView, ViewGroup parent) {
-
-            View view = convertView;
-
-            if (view == null) {
-                LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                view = inflater.inflate(R.layout.main_list_item_station, null);
-            }
-
-            Station station = getItem(position);
-
-            if (station == null) return view;
-
-            TextView text = (TextView) view.findViewById(R.id.text);
-            if (text != null) text.setText(station.getName());
-
-            return view;
-        }
     }
 }
