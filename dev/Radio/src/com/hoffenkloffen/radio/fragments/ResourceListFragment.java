@@ -12,9 +12,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.hoffenkloffen.radio.R;
 import com.hoffenkloffen.radio.entities.Resource;
+import org.androidannotations.annotations.EFragment;
 
 import java.util.List;
 
+@EFragment
 public class ResourceListFragment extends ListFragment {
 
     public interface ResourceListEventHandler {

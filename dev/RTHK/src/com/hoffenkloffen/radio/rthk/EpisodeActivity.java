@@ -11,6 +11,6 @@ public class EpisodeActivity extends BaseEpisodeActivity {
 
     @Override
     protected RadioHandler getRadioHandler() {
-        return new RadioHandler(null, null, null, new StreamHandler(new Downloader()));
+        return new RadioHandler(null, null, null, new StreamHandler(new Downloader())); // TODO: inject as singleton
     }
 }

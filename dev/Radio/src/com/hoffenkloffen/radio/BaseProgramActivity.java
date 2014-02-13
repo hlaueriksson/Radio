@@ -10,6 +10,7 @@ import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Resource;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.Extra;
 
 import java.util.List;
 
@@ -22,6 +23,9 @@ public abstract class BaseProgramActivity extends Activity implements ResourceLi
 
     private RadioHandler radioHandler;
 
+    @Extra(Constants.Program)
+    public String json;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -30,8 +34,8 @@ public abstract class BaseProgramActivity extends Activity implements ResourceLi
 
     //region ResourceListEventHandler
     public List<? extends Resource> getResourceList() {
-        Program program = getProgram();
-        return radioHandler.getEpisodes(program);
+        Program program = Program.deserialize(json);
+        return radioHandler.getEpisodes(program); // TODO: @Background
     }
 
     public void onResourceSelected(Resource resource) {
@@ -42,13 +46,6 @@ public abstract class BaseProgramActivity extends Activity implements ResourceLi
     protected abstract RadioHandler getRadioHandler();
 
     protected abstract Intent getNextActivityIntent();
-
-    private Program getProgram() {
-        Bundle extras = getIntent().getExtras();
-        String value = extras.getString(Constants.Program);
-
-        return Program.deserialize(value);
-    }
 
     private void openEpisode(Episode episode) {
         Log.i(TAG, "openEpisode: " + episode.getUrl());

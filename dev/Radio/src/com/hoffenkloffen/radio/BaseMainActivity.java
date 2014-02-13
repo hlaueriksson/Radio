@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import com.hoffenkloffen.radio.config.Constants;
-import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Resource;
 import com.hoffenkloffen.radio.entities.Station;
 import com.hoffenkloffen.radio.fragments.ResourceListFragment;
@@ -34,13 +33,11 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
 
         radioHandler = getRadioHandler();
-
-        //startFromUri();
     }
 
     //region ResourceListEventHandler
     public List<? extends Resource> getResourceList() {
-        return radioHandler.getStations();
+        return radioHandler.getStations(); // TODO: @Background
     }
 
     public void onResourceSelected(Resource resource) {
@@ -59,36 +56,5 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
         intent.putExtra(Constants.Station, station.serialize());
 
         startActivity(intent);
-    }
-
-    /*
-    private void startFromUri() { // TODO: this should handle main, station, program, episode
-        if (!isViewAction()) return;
-
-        Uri uri = getIntent().getData();
-
-        if (!episodeHandler.isValid(uri.toString())) return;
-
-        Episode episode = episodeHandler.getEpisode(uri.toString());
-
-        if (episode == null) return;
-
-        Log.d(TAG, "startFromUri");
-
-        start(episode);
-    }
-    */
-
-    private void start(Episode episode) {
-        Intent intent = new Intent(getBaseContext(), BaseEpisodeActivity.class);
-        intent.putExtra(Constants.Episode, episode.serialize());
-
-        startActivity(intent);
-    }
-
-    private boolean isViewAction() {
-        String action = getIntent().getAction();
-
-        return Intent.ACTION_VIEW.equals(action);
     }
 }

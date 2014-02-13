@@ -5,7 +5,7 @@
               android:layout_height="match_parent">
 
     <fragment android:id="@+id/resourceListFragment"
-              android:name="com.hoffenkloffen.radio.fragments.ResourceListFragment"
+              android:name="com.hoffenkloffen.radio.fragments.ResourceListFragment_"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"/>
 

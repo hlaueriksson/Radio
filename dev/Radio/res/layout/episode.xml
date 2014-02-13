@@ -10,24 +10,24 @@
             android:layout_height="wrap_content"/>
 
     <ImageButton
+            android:id="@+id/play"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_btn_play"
-            android:contentDescription="@string/play"
-            android:onClick="play"/>
+            android:contentDescription="@string/play"/>
 
     <ImageButton
+            android:id="@+id/pause"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_btn_pause"
-            android:contentDescription="@string/pause"
-            android:onClick="pause"/>
+            android:contentDescription="@string/pause"/>
 
     <ImageButton
+            android:id="@+id/stop"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_btn_stop"
-            android:contentDescription="@string/stop"
-            android:onClick="stop"/>
+            android:contentDescription="@string/stop"/>
 
 </LinearLayout>
