@@ -35,7 +35,7 @@ public abstract class BaseProgramActivity extends Activity implements ResourceLi
     //region ResourceListEventHandler
     public List<? extends Resource> getResourceList() {
         Program program = Program.deserialize(json);
-        return radioHandler.getEpisodes(program); // TODO: @Background
+        return radioHandler.getEpisodes(program);
     }
 
     public void onResourceSelected(Resource resource) {

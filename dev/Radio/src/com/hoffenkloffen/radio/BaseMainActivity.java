@@ -37,7 +37,7 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
 
     //region ResourceListEventHandler
     public List<? extends Resource> getResourceList() {
-        return radioHandler.getStations(); // TODO: @Background
+        return radioHandler.getStations();
     }
 
     public void onResourceSelected(Resource resource) {

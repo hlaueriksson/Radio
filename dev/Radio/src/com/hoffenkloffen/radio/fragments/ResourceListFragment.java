@@ -3,7 +3,6 @@ package com.hoffenkloffen.radio.fragments;
 import android.app.Activity;
 import android.app.ListFragment;
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.hoffenkloffen.radio.R;
 import com.hoffenkloffen.radio.entities.Resource;
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.UiThread;
 
 import java.util.List;
 
@@ -39,19 +41,29 @@ public class ResourceListFragment extends ListFragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setListAdapter(new ResourceAdapter(getActivity(), R.layout.resource_list_item, (List<Resource>) eventHandler.getResourceList()));
-    }
-
-    @Override
     public void onStart() {
         super.onStart();
 
         if (getFragmentManager().findFragmentById(R.id.resourceListFragment) != null) {
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         }
+    }
+
+    @AfterViews
+    public void init() {
+        load();
+    }
+
+    @Background
+    public void load() {
+        List<Resource> list = (List<Resource>) eventHandler.getResourceList();
+
+        update(list);
+    }
+
+    @UiThread
+    public void update(List<Resource> list) {
+        setListAdapter(new ResourceAdapter(getActivity(), R.layout.resource_list_item, list));
     }
 
     @Override
