@@ -1,5 +1,6 @@
 package com.hoffenkloffen.radio.handlers;
 
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Station;
@@ -14,6 +15,7 @@ public class RadioHandler {
     private final IEpisodeHandler episodeHandler;
     private final IStreamHandler streamHandler;
 
+    @Inject
     public RadioHandler(IStationHandler stationHandler, IProgramHandler programHandler, IEpisodeHandler episodeHandler, IStreamHandler streamHandler) {
 
         this.stationHandler = stationHandler;

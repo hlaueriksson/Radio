@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Resource;
 import com.hoffenkloffen.radio.entities.Station;
@@ -21,6 +22,7 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
 
     private static final String TAG = BaseMainActivity.class.getSimpleName();
 
+    @Inject
     private RadioHandler radioHandler;
 
     @FragmentById
@@ -31,8 +33,6 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
         super.onCreate(savedInstanceState);
 
         if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) return;
-
-        radioHandler = getRadioHandler();
     }
 
     //region ResourceListEventHandler
@@ -44,8 +44,6 @@ public abstract class BaseMainActivity extends Activity implements ResourceListE
         openStation((Station) resource);
     }
     //endregion
-
-    protected abstract RadioHandler getRadioHandler();
 
     protected abstract Intent getNextActivityIntent();
 

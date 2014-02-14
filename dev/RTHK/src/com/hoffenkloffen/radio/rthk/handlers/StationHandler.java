@@ -1,6 +1,7 @@
 package com.hoffenkloffen.radio.rthk.handlers;
 
 import android.content.Context;
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.entities.Station;
 import com.hoffenkloffen.radio.handlers.IStationHandler;
 import com.hoffenkloffen.radio.rthk.R;
@@ -11,6 +12,7 @@ import java.util.List;
 public class StationHandler implements IStationHandler {
     private final Context context;
 
+    @Inject
     public StationHandler(Context context) {
         this.context = context;
     }

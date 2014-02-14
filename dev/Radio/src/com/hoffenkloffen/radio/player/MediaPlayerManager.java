@@ -1,22 +1,22 @@
 package com.hoffenkloffen.radio.player;
 
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.utils.ILogFacade;
 
-public class MediaPlayerManager { // TODO do we need this?
+public class MediaPlayerManager {
 
     private static final String TAG = MediaPlayerManager.class.getSimpleName();
 
     private final ILogFacade log;
     private final IMediaPlayerFacade player;
-    private final String path;
 
-    public MediaPlayerManager(ILogFacade log, IMediaPlayerFacade player, String path) {
+    @Inject
+    public MediaPlayerManager(ILogFacade log, IMediaPlayerFacade player) {
         this.log = log;
         this.player = player;
-        this.path = path;
     }
 
-    public void prepare() {
+    public void prepare(String path) {
         try {
             player.setDataSource(path);
             player.prepare();

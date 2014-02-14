@@ -1,5 +1,6 @@
 package com.hoffenkloffen.radio.rthk.handlers;
 
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Stream;
 import com.hoffenkloffen.radio.handlers.IStreamHandler;
@@ -9,6 +10,7 @@ public class StreamHandler implements IStreamHandler {
 
     private final IDownloader downloader;
 
+    @Inject
     public StreamHandler(IDownloader downloader) {
         this.downloader = downloader;
     }

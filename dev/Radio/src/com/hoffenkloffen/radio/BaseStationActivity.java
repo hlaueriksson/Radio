@@ -2,8 +2,8 @@ package com.hoffenkloffen.radio;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Resource;
@@ -21,16 +21,11 @@ public abstract class BaseStationActivity extends Activity implements ResourceLi
 
     private static final String TAG = BaseStationActivity.class.getSimpleName();
 
+    @Inject
     private RadioHandler radioHandler;
 
     @Extra(Constants.Station)
     public String json;
-
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        radioHandler = getRadioHandler();
-    }
 
     //region ResourceListEventHandler
     public List<? extends Resource> getResourceList() {
@@ -42,8 +37,6 @@ public abstract class BaseStationActivity extends Activity implements ResourceLi
         openProgram((Program) resource);
     }
     //endregion
-
-    protected abstract RadioHandler getRadioHandler();
 
     protected abstract Intent getNextActivityIntent();
 

@@ -1,6 +1,7 @@
 package com.hoffenkloffen.radio.rthk.handlers;
 
 import android.content.Context;
+import com.google.inject.Inject;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Station;
 import com.hoffenkloffen.radio.handlers.IProgramHandler;
@@ -14,6 +15,7 @@ public class ProgramHandler implements IProgramHandler {
 
     private final Context context;
 
+    @Inject
     public ProgramHandler(Context context) {
         this.context = context;
     }

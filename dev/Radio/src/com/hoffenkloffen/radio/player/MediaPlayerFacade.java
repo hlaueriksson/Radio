@@ -1,5 +1,7 @@
 package com.hoffenkloffen.radio.player;
 
+import android.content.Context;
+import com.google.inject.Inject;
 import io.vov.vitamio.MediaPlayer;
 
 import java.io.IOException;
@@ -7,8 +9,9 @@ import java.io.IOException;
 public class MediaPlayerFacade implements IMediaPlayerFacade {
     private final MediaPlayer player;
 
-    public MediaPlayerFacade(MediaPlayer player) {
-        this.player = player;
+    @Inject
+    public MediaPlayerFacade(Context context) {
+        this.player = new MediaPlayer(context);
     }
 
     @Override

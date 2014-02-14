@@ -21,12 +21,12 @@ public class MediaPlayerManagerSpec extends BaseSpec {
         player = Mockito.mock(IMediaPlayerFacade.class);
         path = "mms://202.177.192.111/rthk/radio2/20130818/2013081812.asf";
 
-        manager = new MediaPlayerManager(log, player, path);
+        manager = new MediaPlayerManager(log, player);
     }
 
     @Test
     public void should_prepare_episode() throws IOException {
-        manager.prepare();
+        manager.prepare(path);
 
         Mockito.verify(player).setDataSource(path);
         Mockito.verify(player).prepare();
@@ -38,7 +38,7 @@ public class MediaPlayerManagerSpec extends BaseSpec {
 
         Mockito.doThrow(exception).when(player).prepare();
 
-        manager.prepare();
+        manager.prepare(path);
 
         Mockito.verify(log).e("MediaPlayerManager", "Prepare failed.", exception);
     }
