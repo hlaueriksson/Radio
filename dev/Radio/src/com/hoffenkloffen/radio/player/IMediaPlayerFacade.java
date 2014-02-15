@@ -15,4 +15,6 @@ public interface IMediaPlayerFacade {
     void stop();
 
     boolean isPlaying();
+
+    void release();
 }

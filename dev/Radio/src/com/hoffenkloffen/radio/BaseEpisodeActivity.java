@@ -46,12 +46,6 @@ public abstract class BaseEpisodeActivity extends Activity {
         manager.pause();
     }
 
-    @Click
-    public void stop() {
-        log.d("stop");
-        manager.stop();
-    }
-
     @Background
     public void load() {
         Episode episode = Episode.deserialize(json);
@@ -60,5 +54,12 @@ public abstract class BaseEpisodeActivity extends Activity {
         manager.prepare(stream.getUrl());
 
         log.d("load done");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        manager.release();
     }
 }

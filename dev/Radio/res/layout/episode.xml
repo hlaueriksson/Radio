@@ -23,11 +23,4 @@
             android:src="@drawable/ic_btn_pause"
             android:contentDescription="@string/pause"/>
 
-    <ImageButton
-            android:id="@+id/stop"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:src="@drawable/ic_btn_stop"
-            android:contentDescription="@string/stop"/>
-
 </LinearLayout>

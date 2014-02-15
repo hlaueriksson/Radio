@@ -38,4 +38,8 @@ public class MediaPlayerManager {
 
         player.stop();
     }
+
+    public void release() {
+        player.release();
+    }
 }

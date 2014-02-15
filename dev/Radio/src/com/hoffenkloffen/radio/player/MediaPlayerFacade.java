@@ -43,4 +43,9 @@ public class MediaPlayerFacade implements IMediaPlayerFacade {
     public boolean isPlaying() {
         return player.isPlaying();
     }
+
+    @Override
+    public void release() {
+        player.release();
+    }
 }
