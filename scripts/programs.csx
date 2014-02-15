@@ -21,8 +21,7 @@ foreach (Match match in Regex.Matches(html, pattern)) {
 
 using (FileStream fs = File.Open("output/programs.json", FileMode.Create))
 using (StreamWriter sw = new StreamWriter(fs))
-using (JsonWriter jw = new JsonTextWriter(sw))
-{
+using (JsonWriter jw = new JsonTextWriter(sw)) {
   jw.Formatting = Formatting.Indented;
   JsonSerializer serializer = new JsonSerializer();
   serializer.Serialize(jw, result);

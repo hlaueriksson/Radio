@@ -1,26 +1,32 @@
 [
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#r1",
-    "name": "第一台 Radio 1"
+    "name": "第一台 Radio 1",
+    "id": "radio1"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#r2",
-    "name": "第二台 Radio 2"
+    "name": "第二台 Radio 2",
+    "id": "radio2"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#r3",
-    "name": "第三台 Radio 3"
+    "name": "第三台 Radio 3",
+    "id": "radio3"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#r4",
-    "name": "第四台 Radio 4"
+    "name": "第四台 Radio 4",
+    "id": "radio4"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#r5",
-    "name": "第五台 Radio 5"
+    "name": "第五台 Radio 5",
+    "id": "radio5"
   },
   {
     "url": "http://programme.rthk.hk/channel/radio/index_archive.php#rpth",
-    "name": "普通話台 Putonghua Channel "
+    "name": "普通話台 Putonghua Channel",
+    "id": "pth"
   }
 ]
