@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.hoffenkloffen.radio.rthk"
-          android:versionCode="1"
-          android:versionName="0.1">
+          android:versionCode="2"
+          android:versionName="0.2">
 
     <uses-sdk
             android:minSdkVersion="15"
@@ -38,11 +38,11 @@
                     android:pathPattern="/channel/radio/programme.php" /-->
             </intent-filter>
         </activity>
-        <activity
-                android:name="io.vov.vitamio.activity.InitActivity"
-                android:launchMode="singleTop"
-                android:theme="@android:style/Theme.NoTitleBar"
-                android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="io.vov.vitamio.activity.InitActivity"
+                  android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden"
+                  android:launchMode="singleTop"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity android:name=".StationActivity_" android:label="@string/activity_station"/>
         <activity android:name=".ProgramActivity_" android:label="@string/activity_program"/>
         <activity android:name=".EpisodeActivity_" android:label="@string/activity_episode"/>
