@@ -1,6 +1,9 @@
 package com.hoffenkloffen.radio;
 
 import android.app.Activity;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.google.inject.Inject;
 import com.hoffenkloffen.radio.config.Constants;
@@ -9,6 +12,7 @@ import com.hoffenkloffen.radio.entities.Stream;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
 import com.hoffenkloffen.radio.utils.ISimpleLogFacade;
+import com.hoffenkloffen.radio.utils.LogFacade;
 import org.androidannotations.annotations.*;
 
 @EActivity
@@ -24,6 +28,12 @@ public abstract class BaseEpisodeActivity extends Activity {
     private MediaPlayerManager manager; // TODO: put in service
 
     @ViewById
+    protected ProgressBar progress;
+
+    @ViewById
+    protected ImageButton play, pause;
+
+    @ViewById
     protected TextView text;
 
     @Extra(Constants.Episode)
@@ -34,16 +44,29 @@ public abstract class BaseEpisodeActivity extends Activity {
         load();
     }
 
-    @Click
-    public void play() {
-        log.d("play");
-        manager.start();
+    @AfterViews
+    public void render() { // TODO: introduce state machine
+        progress.setVisibility(View.VISIBLE);
+        play.setVisibility(View.GONE);
+        pause.setVisibility(View.GONE);
     }
 
     @Click
+    @Trace(tag = LogFacade.TAG)
+    public void play() {
+        manager.start();
+
+        play.setVisibility(View.GONE);
+        pause.setVisibility(View.VISIBLE);
+    }
+
+    @Click
+    @Trace(tag = LogFacade.TAG)
     public void pause() {
-        log.d("pause");
         manager.pause();
+
+        play.setVisibility(View.VISIBLE);
+        pause.setVisibility(View.GONE);
     }
 
     @Background
@@ -53,7 +76,13 @@ public abstract class BaseEpisodeActivity extends Activity {
 
         manager.prepare(stream.getUrl());
 
-        log.d("load done");
+        update();
+    }
+
+    @UiThread
+    public void update() {
+        progress.setVisibility(View.GONE);
+        play.setVisibility(View.VISIBLE);
     }
 
     @Override
