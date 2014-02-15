@@ -3,6 +3,7 @@ package specs.radio.player;
 import com.hoffenkloffen.radio.player.IMediaPlayerFacade;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
 import com.hoffenkloffen.radio.utils.ILogFacade;
+import com.hoffenkloffen.radio.utils.ISimpleLogFacade;
 import org.junit.Test;
 import org.mockito.Mockito;
 import specs.BaseSpec;
@@ -12,12 +13,12 @@ import java.io.IOException;
 public class MediaPlayerManagerSpec extends BaseSpec {
     protected MediaPlayerManager manager;
 
-    private ILogFacade log;
+    private ISimpleLogFacade log;
     private IMediaPlayerFacade player;
     private String path;
 
     protected void given() {
-        log = Mockito.mock(ILogFacade.class);
+        log = Mockito.mock(ISimpleLogFacade.class);
         player = Mockito.mock(IMediaPlayerFacade.class);
         path = "mms://202.177.192.111/rthk/radio2/20130818/2013081812.asf";
 
@@ -40,7 +41,7 @@ public class MediaPlayerManagerSpec extends BaseSpec {
 
         manager.prepare(path);
 
-        Mockito.verify(log).e("MediaPlayerManager", "Prepare failed.", exception);
+        Mockito.verify(log).e("Prepare failed.", exception);
     }
 
     @Test

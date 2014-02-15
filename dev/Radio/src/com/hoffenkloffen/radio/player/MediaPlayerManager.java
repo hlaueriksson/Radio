@@ -1,17 +1,15 @@
 package com.hoffenkloffen.radio.player;
 
 import com.google.inject.Inject;
-import com.hoffenkloffen.radio.utils.ILogFacade;
+import com.hoffenkloffen.radio.utils.ISimpleLogFacade;
 
 public class MediaPlayerManager {
 
-    private static final String TAG = MediaPlayerManager.class.getSimpleName();
-
-    private final ILogFacade log;
+    private final ISimpleLogFacade log;
     private final IMediaPlayerFacade player;
 
     @Inject
-    public MediaPlayerManager(ILogFacade log, IMediaPlayerFacade player) {
+    public MediaPlayerManager(ISimpleLogFacade log, IMediaPlayerFacade player) {
         this.log = log;
         this.player = player;
     }
@@ -21,7 +19,7 @@ public class MediaPlayerManager {
             player.setDataSource(path);
             player.prepare();
         } catch (Exception e) {
-            log.e(TAG, "Prepare failed.", e);
+            log.e("Prepare failed.", e);
         }
     }
 

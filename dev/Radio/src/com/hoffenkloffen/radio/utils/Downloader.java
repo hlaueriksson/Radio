@@ -1,6 +1,6 @@
 package com.hoffenkloffen.radio.utils;
 
-import android.util.Log;
+import com.google.inject.Inject;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
@@ -13,7 +13,8 @@ import java.net.URL;
 
 public class Downloader implements IDownloader {
 
-    private static final String TAG = "Downloader";
+    @Inject
+    private ISimpleLogFacade log;
 
     public InputStream getInputStream(final String uri) {
         try {
@@ -21,7 +22,7 @@ public class Downloader implements IDownloader {
 
             return url.openStream();
         } catch (IOException e) {
-            Log.e(TAG, "Get InputStream failed.", e);
+            log.e("Get InputStream failed.", e);
         }
 
         return null;
@@ -37,7 +38,7 @@ public class Downloader implements IDownloader {
 
             return httpClient.execute(httpGet, responseHandler);
         } catch (IOException e) {
-            Log.e(TAG, "Get response failed.", e);
+            log.e("Get response failed.", e);
         } finally {
             httpClient.getConnectionManager().shutdown();
         }

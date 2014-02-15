@@ -2,7 +2,7 @@ package com.hoffenkloffen.radio.utils;
 
 import android.util.Log;
 
-public class LogFacade implements ILogFacade {
+public class LogFacade implements ISimpleLogFacade {
 
     @Override
     public int d(String tag, String msg) {
@@ -88,4 +88,43 @@ public class LogFacade implements ILogFacade {
     public int wtf(String tag, String msg, Throwable tr) {
         return Log.wtf(tag, msg, tr);
     }
+
+    //region Simple
+    public static final String TAG = "Radio";
+
+    @Override
+    public int d(String msg) {
+        return d(TAG, msg);
+    }
+
+    @Override
+    public int i(String msg) {
+        return i(TAG, msg);
+    }
+
+    @Override
+    public int e(String msg) {
+        return e(TAG, msg);
+    }
+
+    @Override
+    public int e(String msg, Throwable tr) {
+        return e(TAG, msg, tr);
+    }
+
+    @Override
+    public int v(String msg) {
+        return v(TAG, msg);
+    }
+
+    @Override
+    public int w(String msg) {
+        return w(TAG, msg);
+    }
+
+    @Override
+    public int wtf(String msg) {
+        return wtf(TAG, msg);
+    }
+    //endregion
 }

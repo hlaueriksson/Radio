@@ -1,7 +1,6 @@
 package com.hoffenkloffen.radio;
 
 import android.app.Activity;
-import android.util.Log;
 import android.widget.TextView;
 import com.google.inject.Inject;
 import com.hoffenkloffen.radio.config.Constants;
@@ -9,12 +8,14 @@ import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Stream;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
 import com.hoffenkloffen.radio.player.MediaPlayerManager;
+import com.hoffenkloffen.radio.utils.ISimpleLogFacade;
 import org.androidannotations.annotations.*;
 
 @EActivity
 public abstract class BaseEpisodeActivity extends Activity {
 
-    private static final String TAG = BaseEpisodeActivity.class.getSimpleName(); // TODO: hide in log facade
+    @Inject
+    private ISimpleLogFacade log;
 
     @Inject
     private RadioHandler radioHandler;
@@ -35,19 +36,19 @@ public abstract class BaseEpisodeActivity extends Activity {
 
     @Click
     public void play() {
-        Log.d(TAG, "play");
+        log.d("play");
         manager.start();
     }
 
     @Click
     public void pause() {
-        Log.d(TAG, "pause");
+        log.d("pause");
         manager.pause();
     }
 
     @Click
     public void stop() {
-        Log.d(TAG, "stop");
+        log.d("stop");
         manager.stop();
     }
 
@@ -58,6 +59,6 @@ public abstract class BaseEpisodeActivity extends Activity {
 
         manager.prepare(stream.getUrl());
 
-        Log.d(TAG, "load done");
+        log.d("load done");
     }
 }

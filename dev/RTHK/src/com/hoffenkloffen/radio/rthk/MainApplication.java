@@ -9,10 +9,7 @@ import com.hoffenkloffen.radio.rthk.handlers.EpisodeHandler;
 import com.hoffenkloffen.radio.rthk.handlers.ProgramHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StationHandler;
 import com.hoffenkloffen.radio.rthk.handlers.StreamHandler;
-import com.hoffenkloffen.radio.utils.Downloader;
-import com.hoffenkloffen.radio.utils.IDownloader;
-import com.hoffenkloffen.radio.utils.ILogFacade;
-import com.hoffenkloffen.radio.utils.LogFacade;
+import com.hoffenkloffen.radio.utils.*;
 import roboguice.application.RoboApplication;
 import roboguice.config.AbstractAndroidModule;
 
@@ -29,8 +26,8 @@ public class MainApplication extends RoboApplication {
         @Override
         protected void configure() {
             bind(RadioHandler.class).asEagerSingleton();
-            bind(MediaPlayerManager.class); // Lazy
 
+            bind(MediaPlayerManager.class); // Lazy
             bind(IMediaPlayerFacade.class).to(MediaPlayerFacade.class);
 
             bind(IEpisodeHandler.class).to(EpisodeHandler.class);
@@ -39,7 +36,9 @@ public class MainApplication extends RoboApplication {
             bind(IStreamHandler.class).to(StreamHandler.class);
 
             bind(IDownloader.class).to(Downloader.class);
+
             bind(ILogFacade.class).to(LogFacade.class);
+            bind(ISimpleLogFacade.class).to(LogFacade.class);
         }
     }
 }

@@ -2,13 +2,13 @@ package com.hoffenkloffen.radio;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import com.google.inject.Inject;
 import com.hoffenkloffen.radio.config.Constants;
 import com.hoffenkloffen.radio.entities.Episode;
 import com.hoffenkloffen.radio.entities.Program;
 import com.hoffenkloffen.radio.entities.Resource;
 import com.hoffenkloffen.radio.handlers.RadioHandler;
+import com.hoffenkloffen.radio.utils.ISimpleLogFacade;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Extra;
 
@@ -19,7 +19,8 @@ import static com.hoffenkloffen.radio.fragments.ResourceListFragment.ResourceLis
 @EActivity
 public abstract class BaseProgramActivity extends Activity implements ResourceListEventHandler {
 
-    private static final String TAG = BaseProgramActivity.class.getSimpleName();
+    @Inject
+    private ISimpleLogFacade log;
 
     @Inject
     private RadioHandler radioHandler;
@@ -41,7 +42,7 @@ public abstract class BaseProgramActivity extends Activity implements ResourceLi
     protected abstract Intent getNextActivityIntent();
 
     private void openEpisode(Episode episode) {
-        Log.i(TAG, "openEpisode: " + episode.getUrl());
+        log.i("openEpisode: " + episode.getUrl());
 
         Intent intent = getNextActivityIntent();
         intent.putExtra(Constants.Episode, episode.serialize());

@@ -1,7 +1,7 @@
 package com.hoffenkloffen.radio.utils;
 
 import android.content.Context;
-import android.util.Log;
+import com.google.inject.Inject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,8 @@ import java.io.InputStreamReader;
 
 public class ResourceLoader {
 
-    private static final String TAG = ResourceLoader.class.getSimpleName();
+    @Inject
+    private ISimpleLogFacade log;
 
     private final Context context;
 
@@ -33,7 +34,7 @@ public class ResourceLoader {
             }
             stream.close();
         } catch (IOException ex) {
-            Log.e(TAG, "Read file failed.", ex);
+            log.e("Read file failed.", ex);
         }
 
         return result.toString();
